@@ -1,0 +1,386 @@
+{
+  "curriculum": {
+    "style": "Quantum Martial Arts - blend of Tae Kwon Do, Wing Chun, Judo, and Arnis",
+    "belts": [
+      {
+        "rank": "White Belt",
+        "color": "white",
+        "philosophy": "The White Belt represents a blank slate. We see the color white as representing snow, emptiness, beginner's mind. We ask the student to approach the training with an open mind, a willingness to be vulnerable, and the wisdom of letting go of expectation.",
+        "levels": [
+          {
+            "level": "White Belt",
+            "forms": [
+              {
+                "name": "Basic Form",
+                "korean_name": "Key Bong Hyung",
+                "video_available": true,
+                "total_steps": 20,
+                "starting_position": "Ready stance",
+                "ending_position": "Left foot back to ready stance",
+                "steps": [
+                  {"number": 1, "movement": "Shift the balance to the right foot, pivot ninety (90) degrees to the left, assume a front stance and down block."},
+                  {"number": 2, "movement": "Step forward to a front stance, single middle punch."},
+                  {"number": 3, "movement": "Shift the balance to the left foot, pivot one-hundred eighty (180) degrees to the right, assume a front stance and down block."},
+                  {"number": 4, "movement": "Step forward to a front stance, single middle punch."},
+                  {"number": 5, "movement": "Shift the balance to the right foot, pivot ninety (90) degrees to the left, assume a front stance and down block."},
+                  {"number": 6, "movement": "Step forward, front stance and (inside) middle block."},
+                  {"number": 7, "movement": "Step forward, front stance and (inside) middle block."},
+                  {"number": 8, "movement": "Step forward, front stance, middle punch and kihap."},
+                  {"number": 9, "movement": "Shift the balance to the right foot, pivot two-hundred seventy (270) degrees to the left, assume a front stance and rising block."},
+                  {"number": 10, "movement": "Step forward to a front stance, single middle punch."},
+                  {"number": 11, "movement": "Shift the balance to the left foot, pivot one-hundred eighty (180) degrees to the right, assume a front stance and rising block."},
+                  {"number": 12, "movement": "Step forward to a front stance, single middle punch."},
+                  {"number": 13, "movement": "Shift the balance to the right foot, pivot ninety (90) degrees to the left, assume a front stance and down block."},
+                  {"number": 14, "movement": "Front kick, step forward front stance and middle punch."},
+                  {"number": 15, "movement": "Front kick, step forward front stance and middle punch."},
+                  {"number": 16, "movement": "Front kick, step forward front stance, middle punch and kihap."},
+                  {"number": 17, "movement": "Shift the balance to the right foot, pivot two-hundred seventy (270) degrees to the left, assume a front stance and down block."},
+                  {"number": 18, "movement": "Step forward, front stance and middle punch."},
+                  {"number": 19, "movement": "Shift the balance to the left foot, pivot one-hundred eighty (180) degrees to the right, assume a front stance and down block."},
+                  {"number": 20, "movement": "Step forward, front stance and middle punch."}
+                ]
+              }
+            ],
+            "one_steps": [
+              {
+                "name": "One-Step 1",
+                "stance": "Front stance with left leg back",
+                "block": "Left hand inside middle block",
+                "counterattack": "Double middle punch"
+              },
+              {
+                "name": "One-Step 2", 
+                "stance": "Front stance with left leg back",
+                "block": "Left hand rising block",
+                "counterattack": "Double high punch"
+              },
+              {
+                "name": "One-Step 3",
+                "stance": "Horse stance with left leg back",
+                "block": "Right-hand inside middle block",
+                "counterattack": ["Spin 180° counterclockwise into horse stance", "Execute double elbow strike (low, rechamber, high)"]
+              }
+            ]
+          },
+          {
+            "level": "High White Belt",
+            "forms": [
+              {
+                "name": "Gravity",
+                "video_available": true,
+                "total_steps": 30,
+                "kihaps": [9, 22, 30],
+                "starting_position": "Ready stance",
+                "ending_position": "Turn 180° over right shoulder, move right foot back to ready stance",
+                "steps": [
+                  {"number": 1, "movement": "Right foot balance, pivot 90° left, front stance, down block"},
+                  {"number": 2, "movement": "Step forward, front stance, middle (inside) block"},
+                  {"number": 3, "movement": "Left foot balance, pivot 180° right, front stance, down block"},
+                  {"number": 4, "movement": "Step forward, front stance, middle (inside) block"},
+                  {"number": 5, "movement": "Right foot balance, pivot 90° left, front stance, down block"},
+                  {"number": 6, "movement": "Reverse punch"},
+                  {"number": 7, "movement": "Step forward, front stance, rising block"},
+                  {"number": 8, "movement": "Step forward, front stance, rising block"},
+                  {"number": 9, "movement": "Step forward, front stance, middle punch, KIHAP"},
+                  {"number": 10, "movement": "Turn 180° left, front stance, middle punch"},
+                  {"number": 11, "movement": "Front kick, turn 90° left, horse stance, double middle punch (right, left)"},
+                  {"number": 12, "movement": "Turn 90° right, front kick"},
+                  {"number": 13, "movement": "Pivot 90° right, horse stance, double middle punch (left, right)"},
+                  {"number": 14, "movement": "Step forward, front stance, middle (outside) block"},
+                  {"number": 15, "movement": "Round kick, step forward, front stance, reverse punch"},
+                  {"number": 16, "movement": "Step forward, front stance, reverse punch"},
+                  {"number": 17, "movement": "Look right shoulder, turn 180° left, front stance, middle (outside) block"},
+                  {"number": 18, "movement": "Round kick, step forward, front stance, reverse punch"},
+                  {"number": 19, "movement": "Step forward, front stance, reverse punch"},
+                  {"number": 20, "movement": "Left foot balance, pivot 270° right, front stance, rising block"},
+                  {"number": 21, "movement": "Front kick (focused), step to fighting stance"},
+                  {"number": 22, "movement": "Front kick (full speed), step forward, front stance, triple middle punch, KIHAP"},
+                  {"number": 23, "movement": "Left foot balance, pivot 270° left, front stance, down block"},
+                  {"number": 24, "movement": "Crescent kick (outside), step forward, front stance, reverse punch"},
+                  {"number": 25, "movement": "Left foot balance, pivot 180° right, front stance, down block"},
+                  {"number": 26, "movement": "Crescent kick (outside), step forward, front stance, reverse punch"},
+                  {"number": 27, "movement": "Right foot balance, pivot 270° right, front stance, down block"},
+                  {"number": 28, "movement": "Step forward, front stance, inside middle block"},
+                  {"number": 29, "movement": "Step forward, front stance, rising block"},
+                  {"number": 30, "movement": "Step forward, front stance, middle punch, KIHAP"}
+                ]
+              }
+            ],
+            "one_steps": [
+              {
+                "name": "One-Step 4",
+                "stance": "Step back into horse stance (right leg)",
+                "block": "Left-handed middle block (outside-in)",
+                "counterattack": ["Trap attacker's arm", "Spin clockwise", "Double elbow strike (low, then high)"]
+              },
+              {
+                "name": "One-Step 5",
+                "stance": "Step forward 45 degrees into front stance (left leg)",
+                "block": "Reverse rising block",
+                "counterattack": ["Pivot 90 degrees right", "Assume front stance", "Execute reverse punch"]
+              },
+              {
+                "name": "One-Step 6",
+                "sequence": ["Execute left leg front kick", "Step forward into front stance", "Execute middle block", "Execute reverse middle punch"]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rank": "Yellow Belt",
+        "color": "yellow",
+        "philosophy": "The color yellow represents the seed that is scattered over the ground, in the hopes that it will germinate and grow. The key to Yellow Belt is patience, as it takes time to grow roots and begin to sprout.",
+        "levels": [
+          {
+            "level": "Yellow Belt",
+            "forms": [
+              {
+                "name": "Terra Moto",
+                "video_available": true,
+                "stances": ["back stance", "horse stance", "front stance", "walking stance"],
+                "techniques": {
+                  "blocks": ["down block", "rising block", "middle block", "knife hand block"],
+                  "strikes": ["middle punch", "reverse punch", "back fist", "knife hand strike"],
+                  "kicks": ["front kick", "side kick", "round kick"]
+                },
+                "notes": "Complete step-by-step instructions available - consult instructor for details"
+              }
+            ],
+            "one_steps": [
+              {
+                "name": "Yellow Belt One-Step 1",
+                "attacker": "Step forward with right foot, single punch to solar plexus",
+                "defender": "Step back with left foot to back stance, left knife hand block, step forward with right foot, right reverse punch to solar plexus"
+              },
+              {
+                "name": "Yellow Belt One-Step 2", 
+                "attacker": "Step forward with right foot, single punch to solar plexus",
+                "defender": "Step back with left foot to back stance, left knife hand block, step forward with right foot, right knife hand strike to neck"
+              },
+              {
+                "name": "Yellow Belt One-Step 3",
+                "attacker": "Step forward with right foot, single punch to solar plexus", 
+                "defender": "Step back with left foot to back stance, left knife hand block, pivot 45 degrees right, right horizontal elbow strike to ribs, left horizontal elbow strike to face"
+              }
+            ]
+          },
+          {
+            "level": "High Yellow Belt",
+            "forms": [
+              {
+                "name": "Riverbed",
+                "video_available": true,
+                "total_steps": 25,
+                "starting_position": "Ready stance",
+                "ending_position": "Left foot back to ready stance",
+                "special_features": ["flying side kicks", "multiple pivots", "complex stance transitions"],
+                "kihap_points": "Multiple throughout form",
+                "notes": "Advanced form with jumping and spinning techniques"
+              }
+            ],
+            "one_steps": [
+              {
+                "name": "High Yellow Belt One-Steps",
+                "description": "Advanced one-step techniques building on Yellow Belt foundation",
+                "notes": "Detailed steps available through instructor"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rank": "Green Belt", 
+        "color": "green",
+        "element": "Earth",
+        "levels": [
+          {
+            "level": "Green Belt",
+            "forms": [
+              {
+                "name": "Attitude",
+                "video_available": true,
+                "total_steps": 30,
+                "starting_position": "Open ready stance (B)",
+                "ending_position": "Open ready stance (B)",
+                "belt_levels": {
+                  "adults": "Green Belt",
+                  "teens": "Blue Belt", 
+                  "kids": "Red Belt"
+                },
+                "techniques": {
+                  "kicks": ["spin crescent kicks", "vertical knee strikes"],
+                  "jumps": ["hop-switch jumps"],
+                  "stances": ["various fighting stances"]
+                }
+              }
+            ],
+            "one_steps": [
+              {
+                "name": "Green Belt One-Step 1",
+                "description": "Leg weave takedown with ground control"
+              },
+              {
+                "name": "Green Belt One-Step 2", 
+                "description": "Elbow and knee strike combination"
+              },
+              {
+                "name": "Green Belt One-Step 3",
+                "description": "Wrist lock with finishing kicks"
+              }
+            ]
+          },
+          {
+            "level": "High Green Belt",
+            "forms": [
+              {
+                "name": "Waterfall",
+                "video_available": true,
+                "total_steps": 52,
+                "starting_position": "Closed ready stance C",
+                "ending_position": "Right foot forward",
+                "advanced_techniques": {
+                  "kicks": ["tornado kicks", "jump spin hook kicks"],
+                  "blocks": ["diamond blocks"],
+                  "combinations": ["jumping and spinning techniques"]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rank": "Blue Belt",
+        "color": "blue", 
+        "element": "Air",
+        "philosophy": "Learning about the power of air and how to pull what you need from the air around you. Learning to fly - the Blue Belt soars to new heights in their training.",
+        "levels": [
+          {
+            "level": "Blue Belt",
+            "forms": [
+              {
+                "name": "Spirit",
+                "video_available": true,
+                "total_movements": 87,
+                "starting_position": "Open ready stance (C)",
+                "ending_position": "Right leg forward to ready stance",
+                "belt_levels": {
+                  "adults": "Blue Belt",
+                  "teens": "Red Belt",
+                  "kids": "Junior Black Belt"
+                },
+                "stances": ["X-Stance", "Crane stance", "Back stance", "Front stance", "Horse stance", "Cat stance", "Fighting stance"],
+                "hand_techniques": {
+                  "blocks": ["Wedging block", "Knife hand blocks", "Square block", "Diamond block", "Scissor block"],
+                  "strikes": ["Twin uppercuts", "Protected back fists", "Elbow strikes", "Hammer fists", "Punches (twin and circular)"]
+                },
+                "foot_techniques": ["Front kick", "Side kick", "Round kick", "Crescent kick", "Hook kick", "Jump kicks"],
+                "special_movements": ["360-degree turns", "Hopping", "Sliding steps", "Multiple directional changes"]
+              }
+            ],
+            "one_steps": [
+              {
+                "name": "Blue Belt One-Step 1",
+                "attacker_technique": "Rear leg front kick to groin",
+                "defender_sequence": [
+                  "Step back to right back stance",
+                  "Execute ridge hand down block",
+                  "Perform right hook kick", 
+                  "Step forward, pivot 180° left to back stance",
+                  "Deliver reinforced right horizontal elbow strike to face",
+                  "Strike hammer fist to groin",
+                  "Execute back fist to face"
+                ]
+              },
+              {
+                "name": "Blue Belt One-Step 2",
+                "attacker_technique": "Rear leg round kick to face",
+                "defender_sequence": [
+                  "Step forward with right foot, pivot 180° left to back stance",
+                  "Perform knee break",
+                  "Strike right elbow to solar plexus",
+                  "Execute right hook kick to groin",
+                  "Wrap right arm around attacker's head", 
+                  "Pivot 180° right",
+                  "Deliver horizontal knee strike to face"
+                ]
+              },
+              {
+                "name": "Blue Belt One-Step 3",
+                "attacker_technique": "Lunge punch to face",
+                "defender_sequence": [
+                  "Evade right by stepping forward",
+                  "Execute reverse horizontal hammer fist to solar plexus",
+                  "Pivot 90° left",
+                  "Perform reverse knife hand strike to back of neck",
+                  "Kick back of knee to take down",
+                  "Finish with ax kick to back of head"
+                ]
+              }
+            ]
+          },
+          {
+            "level": "High Blue Belt",
+            "forms": [
+              {
+                "name": "Walk in the Park",
+                "video_available": true,
+                "total_movements": "55+",
+                "starting_position": "Ready stance",
+                "special_features": [
+                  "Jumping 180 degrees in air",
+                  "Rolling over shoulder movements",
+                  "360-degree rotations", 
+                  "Sliding kicks with kihap"
+                ],
+                "sample_movements": [
+                  "Double side kick (low, high)",
+                  "Jump rear leg front kick",
+                  "Jump side kick",
+                  "Spin hook kick",
+                  "Snapping crescent kick",
+                  "Slide twist kick"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rank": "Red Belt",
+        "color": "red",
+        "description": "Advanced rank - details not found on public pages"
+      },
+      {
+        "rank": "Black Belt", 
+        "color": "black",
+        "description": "Master rank - details not found on public pages"
+      }
+    ],
+    "additional_resources": {
+      "videos": {
+        "url": "https://quantumsf.org/adult-martial-arts-curriculum/videos/",
+        "description": "Distance-learning videos filmed during 2020 Covid-19 pandemic",
+        "available_forms": [
+          "Basic Form",
+          "Gravity", 
+          "Terra Moto",
+          "Riverbed",
+          "Attitude",
+          "Waterfall",
+          "Spirit",
+          "Walk in the Park"
+        ],
+        "additional_lessons": [
+          "Asterisk Footwork",
+          "Basic Footwork"
+        ]
+      }
+    },
+    "notes": {
+      "instruction": "Videos and written instructions are supplemental to in-person training. Not intended for DIY learning without instructor guidance.",
+      "testing": "Belt tests conducted every six to eight weeks",
+      "progression": "Curriculum builds systematically from basic techniques to advanced combinations"
+    }
+  }
+}
