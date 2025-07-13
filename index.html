@@ -132,7 +132,7 @@
         <!-- Header -->
         <header class="bg-gradient-to-r from-primary-900 via-primary-800 to-primary-700 text-white shadow-luxury sticky top-0 z-50 backdrop-blur-md">
             <div class="container mx-auto px-6 py-6">
-                <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between mb-4">
                     <div class="flex items-center gap-4">
                         <img src="img/quantum_logo.webp" alt="Quantum Martial Arts Logo" class="w-16 h-16 rounded-full bg-white p-2">
                         <div>
@@ -153,6 +153,73 @@
                         Install
                     </button>
                 </div>
+                
+                <!-- Navigation Dropdowns -->
+                <div class="flex gap-3" x-data="{ formsOpen: false, oneStepsOpen: false }">
+                    <!-- Forms Dropdown -->
+                    <div class="flex-1 relative">
+                        <button 
+                            @click="formsOpen = !formsOpen; oneStepsOpen = false"
+                            class="w-full px-4 py-3 text-sm font-medium bg-white/10 border border-white/20 rounded-lg hover:bg-white/20 focus:bg-white/20 focus:ring-2 focus:ring-white/40 transition-all duration-200 cursor-pointer text-left flex items-center justify-between text-white"
+                            style="min-height: 48px;"
+                        >
+                            <span x-text="selectedForm ? allForms.find(f => f.id === selectedForm)?.displayName : 'Forms'" class="font-medium"></span>
+                            <svg class="w-4 h-4 transition-transform duration-200 text-white/70" :class="{'rotate-180': formsOpen}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        
+                        <!-- Forms Options -->
+                        <div x-show="formsOpen" @click.away="formsOpen = false" x-transition class="absolute top-full left-0 right-0 z-50 bg-white border border-slate-200 rounded-lg shadow-lg mt-1 max-h-80 overflow-y-auto">
+                            <div 
+                                @click="selectedForm = null; selectedContent = null; formsOpen = false"
+                                class="px-4 py-3 text-sm font-medium hover:bg-slate-50 cursor-pointer border-b border-slate-100 transition-colors duration-150 text-slate-700"
+                            >
+                                All Forms
+                            </div>
+                            <template x-for="form in allForms" :key="form.id">
+                                <div 
+                                    @click="selectedForm = form.id; selectedOneStep = null; selectedContent = 'form'; formsOpen = false"
+                                    class="px-4 py-3 text-sm hover:bg-slate-50 cursor-pointer border-b border-slate-100 transition-colors duration-150 text-slate-700"
+                                >
+                                    <span x-text="form.displayName"></span>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                    
+                    <!-- One-Steps Dropdown -->
+                    <div class="flex-1 relative">
+                        <button 
+                            @click="oneStepsOpen = !oneStepsOpen; formsOpen = false"
+                            class="w-full px-4 py-3 text-sm font-medium bg-white/10 border border-white/20 rounded-lg hover:bg-white/20 focus:bg-white/20 focus:ring-2 focus:ring-white/40 transition-all duration-200 cursor-pointer text-left flex items-center justify-between text-white"
+                            style="min-height: 48px;"
+                        >
+                            <span x-text="selectedOneStep ? allOneSteps.find(os => os.id === selectedOneStep)?.displayName : 'One-Steps'" class="font-medium"></span>
+                            <svg class="w-4 h-4 transition-transform duration-200 text-white/70" :class="{'rotate-180': oneStepsOpen}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        
+                        <!-- One-Steps Options -->
+                        <div x-show="oneStepsOpen" @click.away="oneStepsOpen = false" x-transition class="absolute top-full left-0 right-0 z-50 bg-white border border-slate-200 rounded-lg shadow-lg mt-1 max-h-80 overflow-y-auto">
+                            <div 
+                                @click="selectedOneStep = null; selectedContent = null; oneStepsOpen = false"
+                                class="px-4 py-3 text-sm font-medium hover:bg-slate-50 cursor-pointer border-b border-slate-100 transition-colors duration-150 text-slate-700"
+                            >
+                                All One-Steps
+                            </div>
+                            <template x-for="oneStep in allOneSteps" :key="oneStep.id">
+                                <div 
+                                    @click="selectedOneStep = oneStep.id; selectedForm = null; selectedContent = 'onestep'; oneStepsOpen = false"
+                                    class="px-4 py-3 text-sm hover:bg-slate-50 cursor-pointer border-b border-slate-100 transition-colors duration-150 text-slate-700"
+                                >
+                                    <span x-text="oneStep.displayName"></span>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -166,72 +233,6 @@
 
         <!-- Main Content -->
         <main x-show="!loading" class="container mx-auto px-4 py-4 max-w-4xl bg-white rounded-lg shadow-sm">
-            <!-- Navigation Dropdowns -->
-            <div class="mb-6 flex gap-3" x-data="{ formsOpen: false, oneStepsOpen: false }">
-                <!-- Forms Dropdown -->
-                <div class="flex-1 relative">
-                    <button 
-                        @click="formsOpen = !formsOpen; oneStepsOpen = false"
-                        class="w-full px-4 py-3 text-sm font-medium bg-white border border-slate-200 rounded-lg hover:border-primary-300 focus:border-primary-400 focus:ring-1 focus:ring-primary-400 transition-all duration-200 cursor-pointer text-left flex items-center justify-between"
-                        style="min-height: 48px;"
-                    >
-                        <span x-text="selectedForm ? allForms.find(f => f.id === selectedForm)?.displayName : 'Forms'" class="text-slate-600 font-medium"></span>
-                        <svg class="w-4 h-4 transition-transform duration-200 text-slate-400" :class="{'rotate-180': formsOpen}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    
-                    <!-- Forms Options -->
-                    <div x-show="formsOpen" @click.away="formsOpen = false" x-transition class="absolute top-full left-0 right-0 z-50 bg-white border border-slate-200 rounded-lg shadow-lg mt-1 max-h-80 overflow-y-auto">
-                        <div 
-                            @click="selectedForm = null; selectedContent = null; formsOpen = false"
-                            class="px-4 py-3 text-sm font-medium hover:bg-slate-50 cursor-pointer border-b border-slate-100 transition-colors duration-150"
-                        >
-                            All Forms
-                        </div>
-                        <template x-for="form in allForms" :key="form.id">
-                            <div 
-                                @click="selectedForm = form.id; selectedOneStep = null; selectedContent = 'form'; formsOpen = false"
-                                class="px-4 py-3 text-sm hover:bg-slate-50 cursor-pointer border-b border-slate-100 transition-colors duration-150"
-                            >
-                                <span x-text="form.displayName" class="text-slate-700"></span>
-                            </div>
-                        </template>
-                    </div>
-                </div>
-                
-                <!-- One-Steps Dropdown -->
-                <div class="flex-1 relative">
-                    <button 
-                        @click="oneStepsOpen = !oneStepsOpen; formsOpen = false"
-                        class="w-full px-4 py-3 text-sm font-medium bg-white border border-slate-200 rounded-lg hover:border-slate-300 focus:border-slate-400 focus:ring-1 focus:ring-slate-400 transition-all duration-200 cursor-pointer text-left flex items-center justify-between"
-                        style="min-height: 48px;"
-                    >
-                        <span x-text="selectedOneStep ? allOneSteps.find(os => os.id === selectedOneStep)?.displayName : 'One-Steps'" class="text-slate-600 font-medium"></span>
-                        <svg class="w-4 h-4 transition-transform duration-200 text-slate-400" :class="{'rotate-180': oneStepsOpen}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    
-                    <!-- One-Steps Options -->
-                    <div x-show="oneStepsOpen" @click.away="oneStepsOpen = false" x-transition class="absolute top-full left-0 right-0 z-50 bg-white border border-slate-200 rounded-lg shadow-lg mt-1 max-h-80 overflow-y-auto">
-                        <div 
-                            @click="selectedOneStep = null; selectedContent = null; oneStepsOpen = false"
-                            class="px-4 py-3 text-sm font-medium hover:bg-slate-50 cursor-pointer border-b border-slate-100 transition-colors duration-150"
-                        >
-                            All One-Steps
-                        </div>
-                        <template x-for="oneStep in allOneSteps" :key="oneStep.id">
-                            <div 
-                                @click="selectedOneStep = oneStep.id; selectedForm = null; selectedContent = 'onestep'; oneStepsOpen = false"
-                                class="px-4 py-3 text-sm hover:bg-slate-50 cursor-pointer border-b border-slate-100 transition-colors duration-150"
-                            >
-                                <span x-text="oneStep.displayName" class="text-slate-700"></span>
-                            </div>
-                        </template>
-                    </div>
-                </div>
-            </div>
 
             <!-- Selected Form Display -->
             <div x-show="selectedContent === 'form' && selectedForm">
@@ -306,8 +307,8 @@
                                 class="w-full flex gap-4 p-3 md:p-4 md:bg-slate-50 hover:bg-slate-100 transition-colors duration-200 text-left focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-inset"
                                 :class="{ 'md:bg-slate-100': openOneStep === oneStepIndex }"
                             >
-                                <div class="flex-shrink-0 w-8 h-8 bg-slate-600 text-white rounded-full flex items-center justify-center text-sm font-medium" x-text="oneStep.numbers || '●'"></div>
-                                <div class="flex-1 font-medium" x-text="oneStep.name || 'One-Step ' + oneStep.numbers"></div>
+                                <div class="flex-shrink-0 w-8 h-8 bg-slate-300 text-slate-600 rounded-full flex items-center justify-center text-sm font-medium" x-text="oneStep.numbers || '●'"></div>
+                                <div class="flex-1 font-semibold text-slate-800 text-base" x-text="oneStep.name || 'One-Step ' + oneStep.numbers"></div>
                                 <div class="flex-shrink-0 w-5 h-5 text-slate-600 transition-transform duration-200" :class="{ 'rotate-180': openOneStep === oneStepIndex }">
                                     <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
