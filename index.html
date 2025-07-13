@@ -127,7 +127,7 @@
     }
     </script>
 </head>
-<body class="bg-slate-100 text-slate-800 font-body antialiased">
+<body class="text-slate-800 font-body antialiased">
     <div x-data="quantumApp()" x-init="loadCurriculum()" class="min-h-screen">
         <!-- Header -->
         <header class="bg-gradient-to-r from-primary-900 via-primary-800 to-primary-700 text-white shadow-luxury sticky top-0 z-50 backdrop-blur-md">
@@ -232,10 +232,10 @@
         </div>
 
         <!-- Main Content -->
-        <main x-show="!loading" class="container mx-auto px-4 py-4 max-w-4xl bg-white rounded-lg shadow-sm">
+        <main x-show="!loading" class="bg-white">
 
             <!-- Selected Form Display -->
-            <div x-show="selectedContent === 'form' && selectedForm">
+            <div x-show="selectedContent === 'form' && selectedForm" class="container mx-auto px-4 py-4 max-w-4xl">
                 <!-- Form Header -->
                 <div class="mb-6">
                     <h3 class="text-2xl font-bold text-slate-800 mb-1" x-text="getCurrentForm()?.name"></h3>
@@ -290,20 +290,30 @@
             </div>
 
             <!-- Selected One-Step Display -->
-            <div x-show="selectedContent === 'onestep' && selectedOneStep" class="space-y-4">
-                <!-- Header -->
-                <div class="mb-6">
-                    <h3 class="text-2xl font-bold text-slate-800 mb-1" x-text="getCurrentOneStep()?.displayName + ' One-Steps'"></h3>
-                    <div class="text-slate-500 text-base" x-text="getCurrentOneStep()?.oneSteps?.length + ' one-steps'"></div>
-                </div>
-                
+            <div x-show="selectedContent === 'onestep' && selectedOneStep">
                 <!-- One-Step Accordion -->
-                <div x-data="{ openOneStep: 0 }" class="md:border md:border-slate-200 md:rounded-lg md:overflow-hidden">
+                <div x-data="{ 
+                    openOneStep: 0,
+                    scrollToOneStep(index, containerElement) {
+                        this.openOneStep = this.openOneStep === index ? -1 : index;
+                        if (this.openOneStep === index) {
+                            setTimeout(() => {
+                                const header = document.querySelector('header');
+                                const headerHeight = header ? header.offsetHeight : 0;
+                                const elementTop = containerElement.offsetTop;
+                                window.scrollTo({
+                                    top: elementTop - headerHeight,
+                                    behavior: 'smooth'
+                                });
+                            }, 350);
+                        }
+                    }
+                }">
                     <template x-for="(oneStep, oneStepIndex) in getCurrentOneStep()?.oneSteps || []" :key="oneStep.name || oneStep.numbers">
                         <div class="border-t border-slate-200 first:border-t-0">
                             <!-- One-Step Header (Clickable) -->
                             <button 
-                                @click="openOneStep = openOneStep === oneStepIndex ? -1 : oneStepIndex"
+                                @click="scrollToOneStep(oneStepIndex, $el.parentElement)"
                                 class="w-full flex gap-4 p-3 md:p-4 md:bg-slate-50 hover:bg-slate-100 transition-colors duration-200 text-left focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-inset"
                                 :class="{ 'md:bg-slate-100': openOneStep === oneStepIndex }"
                             >
@@ -356,7 +366,7 @@
             </div>
 
             <!-- Welcome Message -->
-            <div x-show="!selectedForm && !selectedOneStep" class="text-center py-12">
+            <div x-show="!selectedForm && !selectedOneStep" class="container mx-auto px-4 py-4 max-w-4xl text-center py-12">
                 <div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center mx-auto mb-6">
                     <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
