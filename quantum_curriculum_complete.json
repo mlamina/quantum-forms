@@ -44,21 +44,31 @@
             "one_steps": [
               {
                 "name": "One-Step 1",
-                "stance": "Front stance with left leg back",
-                "block": "Left hand inside middle block",
-                "counterattack": "Double middle punch"
+                "attacker_technique": "Step back into front stance with right leg, execute left down block. When defender is ready, step forward to front stance and execute single punch to middle area",
+                "defender_sequence": [
+                  "Assume front stance with left leg back",
+                  "Execute left hand inside middle block",
+                  "Counter with double middle punch"
+                ]
               },
               {
                 "name": "One-Step 2", 
-                "stance": "Front stance with left leg back",
-                "block": "Left hand rising block",
-                "counterattack": "Double high punch"
+                "attacker_technique": "Step back into front stance with right leg, execute left down block. When defender is ready, step forward to front stance and execute single punch to high area",
+                "defender_sequence": [
+                  "Assume front stance with left leg back",
+                  "Execute left hand rising block",
+                  "Counter with double high punch"
+                ]
               },
               {
                 "name": "One-Step 3",
-                "stance": "Horse stance with left leg back",
-                "block": "Right-hand inside middle block",
-                "counterattack": ["Spin 180° counterclockwise into horse stance", "Execute double elbow strike (low, rechamber, high)"]
+                "attacker_technique": "Step back into front stance with right leg, execute left down block. When defender is ready, step forward to front stance and execute single punch to middle area",
+                "defender_sequence": [
+                  "Step back into horse stance with left leg back",
+                  "Execute right-hand inside middle block",
+                  "Spin 180° counterclockwise into horse stance",
+                  "Execute double elbow strike (low, rechamber, high)"
+                ]
               }
             ]
           },
@@ -109,19 +119,35 @@
             "one_steps": [
               {
                 "name": "One-Step 4",
-                "stance": "Step back into horse stance (right leg)",
-                "block": "Left-handed middle block (outside-in)",
-                "counterattack": ["Trap attacker's arm", "Spin clockwise", "Double elbow strike (low, then high)"]
+                "attacker_technique": "Step back into front stance with right leg, execute left down block. When defender is ready, step forward to front stance and execute single punch to middle area",
+                "defender_sequence": [
+                  "Step back into horse stance (right leg)",
+                  "Execute left-handed middle block (outside-in)",
+                  "Trap attacker's arm",
+                  "Spin clockwise",
+                  "Execute double elbow strike (low, then high)"
+                ]
               },
               {
                 "name": "One-Step 5",
-                "stance": "Step forward 45 degrees into front stance (left leg)",
-                "block": "Reverse rising block",
-                "counterattack": ["Pivot 90 degrees right", "Assume front stance", "Execute reverse punch"]
+                "attacker_technique": "Step back into front stance with right leg, execute left down block. When defender is ready, step forward to front stance and execute single punch to high area",
+                "defender_sequence": [
+                  "Step forward 45 degrees into front stance (left leg)",
+                  "Execute reverse rising block",
+                  "Pivot 90 degrees right",
+                  "Assume front stance",
+                  "Execute reverse punch"
+                ]
               },
               {
                 "name": "One-Step 6",
-                "sequence": ["Execute left leg front kick", "Step forward into front stance", "Execute middle block", "Execute reverse middle punch"]
+                "attacker_technique": "Step back into front stance with right leg, execute left down block. When defender is ready, step forward to front stance and execute single punch to middle area",
+                "defender_sequence": [
+                  "Execute left leg front kick",
+                  "Step forward into front stance",
+                  "Execute middle block",
+                  "Execute reverse middle punch"
+                ]
               }
             ]
           }
@@ -138,30 +164,73 @@
               {
                 "name": "Terra Moto",
                 "video_available": true,
-                "stances": ["back stance", "horse stance", "front stance", "walking stance"],
-                "techniques": {
-                  "blocks": ["down block", "rising block", "middle block", "knife hand block"],
-                  "strikes": ["middle punch", "reverse punch", "back fist", "knife hand strike"],
-                  "kicks": ["front kick", "side kick", "round kick"]
-                },
-                "notes": "Complete step-by-step instructions available - consult instructor for details"
+                "total_steps": 24,
+                "starting_position": "ready stance",
+                "ending_position": "ready stance",
+                "kihaps": [8, 17],
+                "steps": [
+                  {"number": 1, "movement": "Step forward with the left foot, assume a back stance and execute a guarding block."},
+                  {"number": 2, "movement": "Execute a front leg front kick, step backward, assume a back stance and execute a guarding block."},
+                  {"number": 3, "movement": "Execute a front leg round kick, turn attention 90° to the left, step down into a horse stance and execute a right targeted elbow strike."},
+                  {"number": 4, "movement": "Execute a step-up side kick, step forward, assume a back stance and execute an inside knife-hand strike."},
+                  {"number": 5, "movement": "Grab attacker's head and execute a targeted outside crescent kick. Step forward, assume a front stance and execute a palm heel strike (High)."},
+                  {"number": 6, "movement": "Execute a round kick, step forward, assume a walking stance and reverse punch."},
+                  {"number": 7, "movement": "Execute a round kick, step forward, assume a walking stance and reverse punch."},
+                  {"number": 8, "movement": "Step forward, assume a front stance and execute a reverse triple punch (high; middle, low), KIHAP."},
+                  {"number": 9, "movement": "Shift the balance to the right foot, pivot 270° degrees to the left, assume a front stance and execute a reverse outside middle block."},
+                  {"number": 10, "movement": "Execute a front kick, step forward to a front stance, reverse dropping knife-hand strike."},
+                  {"number": 11, "movement": "Shift the balance to the left foot, pivot 180° degrees to the right, assume a front stance and reverse outside middle block."},
+                  {"number": 12, "movement": "Execute a round kick, step forward, assume a back stance and execute a guarding block."},
+                  {"number": 13, "movement": "Shift the balance to the right foot, pivot 90° degrees to the left, assume a front stance and down block."},
+                  {"number": 14, "movement": "(Full re-chamber) Reverse punch."},
+                  {"number": 15, "movement": "Step forward, assume a front stance and rising block."},
+                  {"number": 16, "movement": "(Full re-chamber) Down block."},
+                  {"number": 17, "movement": "Step forward, assume a front stance and palm-heel strike (High)."},
+                  {"number": 18, "movement": "Step forward, assume a front stance and palm-heel strike (High)."},
+                  {"number": 19, "movement": "Step forward, assume a front stance and triple punch (low, middle, high), KIHAP."},
+                  {"number": 20, "movement": "Shift the balance to the left foot, pivot 270° degrees to the right, assume a back stance and execute a guarding block."},
+                  {"number": 21, "movement": "Execute a front leg sidekick, step down, assume a horse stance, inside knife-hand strike."},
+                  {"number": 22, "movement": "Slide the right foot to the left foot, slide the left foot out to the left, assume a horse stance and inside knife-hand strike."},
+                  {"number": 23, "movement": "Execute a front leg side kick, step forward, assume a back stance and execute a guarding block."},
+                  {"number": 24, "movement": "Shift the balance to the right foot, pivot 90° degrees to the left, assume a back stance and execute a guarding block, KIHAP."}
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/terra-moto/"
               }
             ],
             "one_steps": [
               {
                 "name": "Yellow Belt One-Step 1",
-                "attacker": "Step forward with right foot, single punch to solar plexus",
-                "defender": "Step back with left foot to back stance, left knife hand block, step forward with right foot, right reverse punch to solar plexus"
+                "attacker_technique": "Step forward with right foot, single punch to solar plexus",
+                "defender_sequence": [
+                  "Step back with left foot to back stance",
+                  "Execute left knife hand block",
+                  "Step forward with right foot",
+                  "Execute right reverse punch to solar plexus"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/yellow-belt-one-steps/"
               },
               {
                 "name": "Yellow Belt One-Step 2", 
-                "attacker": "Step forward with right foot, single punch to solar plexus",
-                "defender": "Step back with left foot to back stance, left knife hand block, step forward with right foot, right knife hand strike to neck"
+                "attacker_technique": "Step forward with right foot, single punch to solar plexus",
+                "defender_sequence": [
+                  "Step back with left foot to back stance",
+                  "Execute left knife hand block",
+                  "Step forward with right foot",
+                  "Execute right knife hand strike to neck"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/yellow-belt-one-steps/"
               },
               {
                 "name": "Yellow Belt One-Step 3",
-                "attacker": "Step forward with right foot, single punch to solar plexus", 
-                "defender": "Step back with left foot to back stance, left knife hand block, pivot 45 degrees right, right horizontal elbow strike to ribs, left horizontal elbow strike to face"
+                "attacker_technique": "Step forward with right foot, single punch to solar plexus", 
+                "defender_sequence": [
+                  "Step back with left foot to back stance",
+                  "Execute left knife hand block",
+                  "Pivot 45 degrees right",
+                  "Execute right horizontal elbow strike to ribs",
+                  "Execute left horizontal elbow strike to face"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/yellow-belt-one-steps/"
               }
             ]
           },
@@ -172,18 +241,76 @@
                 "name": "Riverbed",
                 "video_available": true,
                 "total_steps": 25,
-                "starting_position": "Ready stance",
-                "ending_position": "Left foot back to ready stance",
+                "starting_position": "Closed ready stance (A)",
+                "ending_position": "Closed ready stance (A)",
+                "kihaps": [7, 16, 25],
+                "steps": [
+                  {"number": 1, "movement": "Shift the balance on to the left foot, step back and assume a back stance, double knife-hand guarding block."},
+                  {"number": 2, "movement": "Step backward, back stance double knife-hand guarding block."},
+                  {"number": 3, "movement": "Step backward, back stance double knife-hand guarding block."},
+                  {"number": 4, "movement": "Front kick, step back while pivoting 180° degrees to the right, assume a back stance, double knife-hand guarding block."},
+                  {"number": 5, "movement": "Rear leg fake, front leg front kick. Step forward into a front stance, reinforced middle block."},
+                  {"number": 6, "movement": "Turn around in a back stance, guarding block."},
+                  {"number": 7, "movement": "Three step flying side kick, KIHAP. Step down into a back stance, double knife-hand guarding block."},
+                  {"number": 8, "movement": "Shift the balance to the left foot, step the right foot up and then leading with the left foot, assume a back stance, square block 90° degrees to the left."},
+                  {"number": 9, "movement": "Low round kick, then high round kick, step forward while pivoting 180° to the left to a back stance, reinforced horizontal elbow strike to the rear."},
+                  {"number": 10, "movement": "Shift your attention 180° degrees to the left, execute a slide round kick and assume a horse stance, side punch to the ribs."},
+                  {"number": 11, "movement": "Shift the balance to the right foot, and turn your attention 90° to the right. Step forward to a front stance, reverse rising block."},
+                  {"number": 12, "movement": "Side kick, step forward fighting stance."},
+                  {"number": 13, "movement": "Slide side kick, step forward fighting stance."},
+                  {"number": 14, "movement": "Round kick, step forward fighting stance."},
+                  {"number": 15, "movement": "Turn side kick, step forward back stance, knife-hand strike."},
+                  {"number": 16, "movement": "Step backwards front stance, single middle punch, KIHAP."},
+                  {"number": 17, "movement": "Full re-chamber, dropping knife-hand strike."},
+                  {"number": 18, "movement": "Outside crescent kick, keeping attention forward. Then rotate 180° to the left, and step backward to a front stance, reverse punch."},
+                  {"number": 19, "movement": "Step forward while pivoting 180° degrees to the left, assume a back stance, double knife-hand guarding block."},
+                  {"number": 20, "movement": "Step backward, front stance, reverse rising block."},
+                  {"number": 21, "movement": "Step backward, back stance, double knife-hand guarding block."},
+                  {"number": 22, "movement": "Shift your attention 225° degrees to the right. Right leg turn side kick. Step forward while pivoting 180° degrees to the left, front stance, reverse low palm heel strike."},
+                  {"number": 23, "movement": "Bring the right foot to the left foot, and quickly shift the balance to the right foot. Turn your attention 90° degrees to the right, and execute a turn side kick. Step forward while rotating 180° degrees to your right. Assume a back stance, double knife-hand guarding block."},
+                  {"number": 24, "movement": "Bring the left foot to the right foot, and quickly shift the balance to the left foot. Turn your attention 45° to the right, step backward to a back stance, double knife-hand guarding block."},
+                  {"number": 25, "movement": "Turn around, back stance, double knife-hand guarding block, KIHAP."}
+                ],
                 "special_features": ["flying side kicks", "multiple pivots", "complex stance transitions"],
-                "kihap_points": "Multiple throughout form",
-                "notes": "Advanced form with jumping and spinning techniques"
+                "notes": "Advanced form with jumping and spinning techniques",
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/riverbed/"
               }
             ],
             "one_steps": [
               {
-                "name": "High Yellow Belt One-Steps",
-                "description": "Advanced one-step techniques building on Yellow Belt foundation",
-                "notes": "Detailed steps available through instructor"
+                "name": "One-Step 4",
+                "attacker_technique": "Step back with the right foot, assume a back stance and execute a guarding block",
+                "defender_sequence": [
+                  "Step back 45 degrees with the left foot",
+                  "Assume a back stance, double knife hand guarding block",
+                  "Grab your attacker's wrist and execute a front leg round kick",
+                  "Without letting go of your attacker, step forward and assume a front stance",
+                  "Execute a downwards knife hand strike to the neck"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/high-yellow-belt-one-steps/"
+              },
+              {
+                "name": "One-Step 5",
+                "attacker_technique": "Step back with the right foot, assume a back stance and execute a guarding block",
+                "defender_sequence": [
+                  "Slide backwards, leading with the right foot and assume a back stance",
+                  "Double knife hand guarding block",
+                  "Rotating on your front foot, spin backwards 180 to a horse stance",
+                  "Execute a knife hand strike (inside – outside)"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/high-yellow-belt-one-steps/"
+              },
+              {
+                "name": "One-Step 6",
+                "attacker_technique": "Step back with the right foot, assume a back stance and execute a guarding block",
+                "defender_sequence": [
+                  "Step back with the right foot to a back stance",
+                  "Execute a guarding block",
+                  "Quickly follow with a front leg side kick",
+                  "Then a turning side kick",
+                  "Assume a back stance guarding block to finish"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/high-yellow-belt-one-steps/"
               }
             ]
           }
@@ -201,8 +328,55 @@
                 "name": "Attitude",
                 "video_available": true,
                 "total_steps": 30,
-                "starting_position": "Open ready stance (B)",
+                "starting_position": "Closed ready stance (B)",
                 "ending_position": "Open ready stance (B)",
+                "kihaps": [7, 13, 26],
+                "steps": [
+                  {"number": 1, "movement": "Shift the balance to the right foot, pivot 90° to the left, and step forward back stance, double knife-hand guarding block."},
+                  {"number": 2, "movement": "Front leg front kick, step down in a front stance, single middle punch."},
+                  {"number": "2b", "movement": "Reverse punch."},
+                  {"number": 3, "movement": "Shift the balance to the right foot. Step the left foot over in line with the right and pivot 180° to the right to a back stance, double knife-hand guarding block."},
+                  {"number": 4, "movement": "Front leg front kick, step down to a front stance, punch."},
+                  {"number": "4b", "movement": "Reverse punch."},
+                  {"number": 5, "movement": "Shift the balance to the right foot, pivot 90° to the left. Step forward front stance, reverse punch."},
+                  {"number": "5b", "movement": "Reverse back fist."},
+                  {"number": 6, "movement": "Side kick, step forward front stance, reverse punch."},
+                  {"number": "6b", "movement": "Reverse back fist."},
+                  {"number": 7, "movement": "Round kick, KIHAP. Then step forward back stance, double knife-hand guarding block."},
+                  {"number": 8, "movement": "Shift the balance to the left foot and pivot 270 to the right. Assume a back stance, square block."},
+                  {"number": "8b", "movement": "Side punch (low)."},
+                  {"number": 9, "movement": "Slide side kick, step forward while pivoting 180 to the left and assume a back stance double knife hand guarding block."},
+                  {"number": 10, "movement": "Slide up and step forward to a back stance, square block."},
+                  {"number": "10b", "movement": "Side punch (low)."},
+                  {"number": 11, "movement": "Slide side kick, step forward while pivoting 180° to the right and assume a back stance, double knife-hand guarding block."},
+                  {"number": 12, "movement": "Shift the balance to the left foot. Turn your attention 90° to the left and step forward back stance, guarding block."},
+                  {"number": 13, "movement": "Jump rear leg front kick, step out to a back stance, palm-out middle block."},
+                  {"number": "13b", "movement": "Side punch (low)."},
+                  {"number": "13c", "movement": "Back fist (temple)."},
+                  {"number": "13d", "movement": "Reverse punch, KIHAP."},
+                  {"number": 14, "movement": "Pull the left foot up behind the right leg while pivoting 90° to the left and assume a crane stance, double scissor block."},
+                  {"number": 15, "movement": "Grab attacker's head and execute a left vertical knee strike to the chin. Step forward to a front stance, reverse ridge hand strike (temple)."},
+                  {"number": 16, "movement": "Pull the left foot to the right foot and pivot 90° to the right, closed ready stance (B)."},
+                  {"number": 17, "movement": "Pivot 90° to the right while pulling your right foot up behind your left and assume a crane stance, double scissor block."},
+                  {"number": 18, "movement": "Grab the back of attacker's head and execute a right vertical knee strike to the chin. Step forward to a front stance, reverse ridge hand strike (temple)."},
+                  {"number": 19, "movement": "Shift the balance to the left foot, pivot 90° to the left and execute a low-high side kick. Step forward to a fighting stance."},
+                  {"number": 20, "movement": "Jump front leg side kick. Shift your attention 90° to the left while stepping down into a horse stance, execute a targeted right elbow strike."},
+                  {"number": 21, "movement": "Pull the right foot in to shoulder-width and straighten your legs. Execute a double down block."},
+                  {"number": 22, "movement": "Step forward with the left foot to a front stance, knife-hand down block."},
+                  {"number": "22b", "movement": "Reverse horizontal spear hand to the throat. Step the left foot over in front of the right and pivot 180° to the right. Assume a back stance, double knife-hand guarding block."},
+                  {"number": 23, "movement": "Slide the left foot up to the right foot, and turn your attention 180° to the left. Step backward with the right foot to a back stance, double knife-hand guarding block."},
+                  {"number": 24, "movement": "Jump front leg side kick. Shift your attention 90° to the right, step down into a horse stance and execute a left horizontal targeted elbow strike. Shift the balance to the right foot. Shift your attention 270° to the right, while pivoting your body 90° to the right and assume a fighting stance."},
+                  {"number": 25, "movement": "Round kick, step forward fighting stance."},
+                  {"number": 26, "movement": "Jump turn side kick, step forward into a back stance, palm-out middle block."},
+                  {"number": "26b", "movement": "Side punch (low)."},
+                  {"number": "26c", "movement": "Back fist (temple)."},
+                  {"number": "26d", "movement": "Reverse punch, KIHAP."},
+                  {"number": 27, "movement": "Step backward, front stance, knife-hand rising block."},
+                  {"number": 28, "movement": "Step backward, front stance, single middle punch."},
+                  {"number": "28b", "movement": "Reverse punch."},
+                  {"number": 29, "movement": "Jump up in the air and hop-switch feet, landing in a back stance, double knife-hand guarding block."},
+                  {"number": 30, "movement": "Spin crescent kick, stepping backward to a back stance, double knife-hand guarding block (low)."}
+                ],
                 "belt_levels": {
                   "adults": "Green Belt",
                   "teens": "Blue Belt", 
@@ -212,21 +386,41 @@
                   "kicks": ["spin crescent kicks", "vertical knee strikes"],
                   "jumps": ["hop-switch jumps"],
                   "stances": ["various fighting stances"]
-                }
+                },
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/attitude/"
               }
             ],
             "one_steps": [
               {
                 "name": "Green Belt One-Step 1",
-                "description": "Leg weave takedown with ground control"
+                "attacker_technique": "Step back with the right foot into a fighting stance, then step forward and punch in a fighting stance",
+                "defender_sequence": [
+                  "Drop on right knee, knife hand rising block and rising reverse ridge hand simultaneously",
+                  "Grab the back of attacker's leg with the right hand",
+                  "Take down and leg weave to a pin and hog-tie"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/green-belt-one-steps/"
               },
               {
                 "name": "Green Belt One-Step 2", 
-                "description": "Elbow and knee strike combination"
+                "attacker_technique": "Step back with the right foot into a fighting stance, then step forward and punch in a fighting stance",
+                "defender_sequence": [
+                  "Step forward with the right foot, pivot toward attacker into a horse stance",
+                  "High knife hand middle block, simultaneous horizontal elbow strike",
+                  "Grab back of attacker's head, and execute a targeted vertical knee strike to the face"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/green-belt-one-steps/"
               },
               {
                 "name": "Green Belt One-Step 3",
-                "description": "Wrist lock with finishing kicks"
+                "attacker_technique": "Step back with the right foot into a fighting stance, then step forward and punch in a fighting stance", 
+                "defender_sequence": [
+                  "Step forward with the right foot while pivoting 90 to the left to a fighting stance",
+                  "Knife hand middle block, right ridge hand strike to the groin",
+                  "Using both hands, execute a clockwise wrist lock while pivoting 270 to the right, stepping with the right foot",
+                  "Snap front kick to the face, drop the hands, then ax kick to the back of the head"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/green-belt-one-steps/"
               }
             ]
           },
@@ -238,12 +432,102 @@
                 "video_available": true,
                 "total_steps": 52,
                 "starting_position": "Closed ready stance C",
-                "ending_position": "Right foot forward",
+                "ending_position": "Ready stance (right foot forward)",
+                "kihaps": [7, 19, 23, 32, 48],
+                "steps": [
+                  {"number": 1, "movement": "Step forward 45 with the left foot to a front stance, twin uppercut."},
+                  {"number": 2, "movement": "Front kick, step forward front stance, wedge block."},
+                  {"number": 3, "movement": "Shift the balance to the left foot and pivot 90 to the right to a front stance, low X- block."},
+                  {"number": 4, "movement": "Snapping crescent kick (I-O), step forward front stance, reverse punch."},
+                  {"number": 5, "movement": "Shift the balance to the left foot and pivot 225 to the right. Execute a back stance, knife hand down block."},
+                  {"number": 6, "movement": "Reverse palm block (O-I)."},
+                  {"number": 7, "movement": "Protected back fist to the bridge of the nose, kihap."},
+                  {"number": 8, "movement": "Keeping your attention focused the same direction, pivot 135 to the left to a front stance. Execute a right down block and a left back fist simultaneously."},
+                  {"number": 9, "movement": "Left leg hook kick, step forward back stance, low double knife hand guarding block."},
+                  {"number": 10, "movement": "Ridge hand middle block."},
+                  {"number": 11, "movement": "Scissor block."},
+                  {"number": 12, "movement": "Turn around, back stance palm block (O-I)."},
+                  {"number": 13, "movement": "Back fist to the temple, then slide front leg hook kick, step forward to a front stance downwards knife hand strike."},
+                  {"number": 14, "movement": "Turn your attention 90 to the left, and execute a diamond block with the left down block forward and the right rising block 90 to the right."},
+                  {"number": 15, "movement": "Step the left foot over to a back stance, side punch."},
+                  {"number": 16, "movement": "Step the left foot over to a front stance, twin punch (high)."},
+                  {"number": 17, "movement": "Step forward to a back stance, side punch."},
+                  {"number": 18, "movement": "Step the right foot over to a front stance, twin punch (high)."},
+                  {"number": 19, "movement": "Rear leg fake, front leg sidekick, kihap. Land in a back stance, double knife hand guarding block."},
+                  {"number": 20, "movement": "Shift your attention 90 to the right, and execute a left leg turning sidekick to the knee (snapping), then round kick to the temple (ball of the foot). Step forward to a back stance, horizontal hammer fist to the temple."},
+                  {"number": 21, "movement": "Reverse punch."},
+                  {"number": 22, "movement": "Tension grabbing block."},
+                  {"number": 23, "movement": "While holding on to your attacker's arm, execute a front leg sidekick to the ribs and step forward to a back stance reverse uppercut, and kihap."},
+                  {"number": 24, "movement": "Turn your attention 180 to the right and execute a left leg ball of the foot round kick, step forward fighting stance."},
+                  {"number": 25, "movement": "Spin hook kick. Rotate 360 all the way around, then turn your attention 180 to the right to a back stance low knife hand X-block."},
+                  {"number": 26, "movement": "Grab attacker's foot pull and back to left chamber. Immediately step the right foot over to a front stance, protected reverse punch."},
+                  {"number": 27, "movement": "Shift the balance to the left foot and pivot 270 to the left. Step backwards to a back stance, double knife hand guarding block."},
+                  {"number": 28, "movement": "Step forward while rotating 180 to the left to a back stance double knife hand low guarding block"},
+                  {"number": 29, "movement": "Shift the balance to the right foot, and pivot 180 to the left. Step forward double knife hand guarding block."},
+                  {"number": 30, "movement": "Shift your attention 90 to the left, and step forward to a horse stance, low X- block."},
+                  {"number": 31, "movement": "High X- block."},
+                  {"number": 32, "movement": "Twin Punch and kihap."},
+                  {"number": 33, "movement": "Shift the balance to the left foot and slide the right foot to shoulder width to the right and assume a front stance (maintain your attention to the left) and execute a reverse scooping block."},
+                  {"number": 34, "movement": "Left leg sidekick (towards the left) step forward to a front stance, reverse target elbow strike."},
+                  {"number": 35, "movement": "Shift the balance to the left foot, pivot 90 to the right and execute a front stance knife hand strike and reverse knife hand rising block simultaneously."},
+                  {"number": 36, "movement": "Jump 45 round kick, land in a fighting stance."},
+                  {"number": 37, "movement": "Spin knife hand strike (low)"},
+                  {"number": 38, "movement": "Knife hand strike (High)."},
+                  {"number": 39, "movement": "Pop up hook kick, land in a horse stance, right horizontal spear hand."},
+                  {"number": 40, "movement": "Left ridge hand."},
+                  {"number": 41, "movement": "Right target elbow strike."},
+                  {"number": 42, "movement": "Scissor block. (Left arm down.)"},
+                  {"number": 43, "movement": "Pivot 45 to the right to a front stance reverse scooping block. (But maintain your attention)"},
+                  {"number": 44, "movement": "Pivot 135 to the left to a back stance single knife hand guarding block."},
+                  {"number": 45, "movement": "Reverse target middle punch, while pulling your left foot back to walking stance."},
+                  {"number": 46, "movement": "Step forward to a front stance, knife hand strike. (O-I)."},
+                  {"number": 47, "movement": "Knife hand down block."},
+                  {"number": 48, "movement": "Reverse vertical spear hand (protected)"},
+                  {"number": 49, "movement": "Front kick, then jump front kick. Land in a front stance, triple punch, and kihap. (High, high, low)."},
+                  {"number": 50, "movement": "Target tornado kick, land in a fighting stance."},
+                  {"number": 51, "movement": "Spin hook kick, rotate 270 and step backwards to a back stance, double knife hand guarding block."},
+                  {"number": 52, "movement": "Step forward while rotating 180 to the left and execute a back stance knife hand square block."}
+                ],
                 "advanced_techniques": {
                   "kicks": ["tornado kicks", "jump spin hook kicks"],
                   "blocks": ["diamond blocks"],
                   "combinations": ["jumping and spinning techniques"]
-                }
+                },
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/waterfall/"
+              }
+            ],
+            "one_steps": [
+              {
+                "name": "High Green Belt One-Step 4",
+                "attacker_technique": "Rear Leg Front Kick",
+                "defender_sequence": [
+                  "Out to in crescent block with the right foot",
+                  "Turning sidekick"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/high-green-belt-one-steps/"
+              },
+              {
+                "name": "High Green Belt One-Step 5",
+                "attacker_technique": "Lunge punch",
+                "defender_sequence": [
+                  "Step forward with the right foot 45 to the left to a front stance",
+                  "Middle block (O-I) and reverse palm block (O-I)",
+                  "Place both hands on the ground, and execute a scissors take down",
+                  "Execute a left axe kick or a right dropping roundhouse to the solar plexus"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/high-green-belt-one-steps/"
+              },
+              {
+                "name": "High Green Belt One-Step 6",
+                "attacker_technique": "Lunge punch",
+                "defender_sequence": [
+                  "Step forward with the right foot 45, while pivoting 180 to the left to a fighting stance",
+                  "Simultaneously execute a right horizontal elbow strike (O-I) and a left middle block, palm out",
+                  "Grab the back of the attacker's head and their wrist",
+                  "Sweep their front leg with a right axe kick",
+                  "Take down and execute a nerve strike to the armpit"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/high-green-belt-one-steps/"
               }
             ]
           }
@@ -261,9 +545,99 @@
               {
                 "name": "Spirit",
                 "video_available": true,
-                "total_movements": 87,
+                "total_steps": 87,
                 "starting_position": "Open ready stance (C)",
                 "ending_position": "Right leg forward to ready stance",
+                "kihaps": [21, 37, 59, 87],
+                "steps": [
+                  {"number": 1, "movement": "Leading with the right foot, hop forward to an X-Stance and execute a twin uppercut."},
+                  {"number": 2, "movement": "Wedging block."},
+                  {"number": 3, "movement": "Right protected back fist."},
+                  {"number": 4, "movement": "Switch your stance to crane by lifting the left foot up behind the right knee, simultaneously executing a knife hand square block."},
+                  {"number": 5, "movement": "Reverse outside palm block.(Execute as you move to next stance)."},
+                  {"number": 6, "movement": "Step forward with the left foot to a back stance, descending palm block."},
+                  {"number": 7, "movement": "Targeted reverse punch, then step forward to a front stance, reinforced horizontal elbow strike to the temple."},
+                  {"number": 8, "movement": "Protected vertical back fist (to the bridge of the nose)."},
+                  {"number": 9, "movement": "Turn around in a back stance, double knife hand low guarding block (upset.)"},
+                  {"number": 10, "movement": "Front kick, then side kick. Turn 90 to the left and step backward to a front stance. Execute an arm break to a redirect."},
+                  {"number": 11, "movement": "Turn your attention 180 to the right. Execute a front leg side kick and immediately turn your attention 180 to the left. Step forward while pivoting 180 to the left to a back stance, knife hand down block."},
+                  {"number": 12, "movement": "Round kick, step forward fighting stance."},
+                  {"number": 13, "movement": "Pop-up front leg side kick, stepping forward to a forward front stance, reinforced down block."},
+                  {"number": 14, "movement": "Reverse scissor block."},
+                  {"number": 15, "movement": "Turn around to a front stance, knee break."},
+                  {"number": 16, "movement": "Slide inside axe kick, step forward fighting stance"},
+                  {"number": 17, "movement": "Spin wheel kick, step backward to a back stance, double knife hand guarding block."},
+                  {"number": 18, "movement": "Turn your attention 180 to the right, lift your right leg up to a dragon stance and execute a guarding block."},
+                  {"number": 19, "movement": "Turn your attention 180 to the left and execute a right leg ball of the foot round kick, step forward fighting stance."},
+                  {"number": 20, "movement": "Low-high round kick, step forward fighting stance."},
+                  {"number": 21, "movement": "Pop up side kick, kihap. Step forward while rotating 180 to the right to a front stance, twin punch."},
+                  {"number": 22, "movement": "Turn your attention 90 to the left. Pull the left foot to the right foot and execute a left vertical dropping hammer fist."},
+                  {"number": 23, "movement": "Step forward with the left foot to a cat stance, horizontal back fist."},
+                  {"number": 24, "movement": "Step your left foot forward to a forward front stance, reverse protected upset ridge hand."},
+                  {"number": 25, "movement": "Slide your left foot back to a Chi Sau stance, twin middle block."},
+                  {"number": 26, "movement": "Reverse horizontal elbow strike (targeted)."},
+                  {"number": 27, "movement": "Reverse protected upset ridge hand."},
+                  {"number": 28, "movement": "Reverse knife hand down block and rising palm block simultaneously."},
+                  {"number": 29, "movement": "Slide the left foot to the right foot and execute a right horizontal hammer fist."},
+                  {"number": 30, "movement": "Reverse punch."},
+                  {"number": 31, "movement": "Step forward with the right foot to a back stance, ridge hand down block."},
+                  {"number": 32, "movement": "Spin hook kick, step backward in a back stance, ridge hand scooping block."},
+                  {"number": 33, "movement": "Rising wrist strike."},
+                  {"number": 34, "movement": "Dropping crane block."},
+                  {"number": 35, "movement": "Reverse palm block."},
+                  {"number": 36, "movement": "Protected vertical back fist."},
+                  {"number": 37, "movement": "Re-chamber while remaining in back stance, reverse uppercut and kihap."},
+                  {"number": 38, "movement": "Shift the balance to the left foot and pivot 135 degrees to the left. Step forward to a front stance, protected vertical spearhand."},
+                  {"number": 39, "movement": "Shift the balance back to the left foot, and step forward to an extra deep front stance, horizontal spearhand."},
+                  {"number": 40, "movement": "Shift the balance to the right foot and pivot your body 225 to the left to a horse stance, twin rear elbow strikes."},
+                  {"number": 41, "movement": "Right hook punch, Right horizontal target elbow strike."},
+                  {"number": 42, "movement": "Up on your back toes turning like a reverse technique, execute a right protected back fist. Swing down for a rising vertical hammerfist to the groin."},
+                  {"number": 43, "movement": "Right jabbing uppercut."},
+                  {"number": 44, "movement": "Drop your right knee to the ground, execute a push/pull take down."},
+                  {"number": 45, "movement": "Jump up off the ground, and leading with the left foot, land in an X-stance, twin punch straight down. kihap."},
+                  {"number": 46, "movement": "Step forward with the right foot to a front stance, reverse punch."},
+                  {"number": 47, "movement": "Middle punch."},
+                  {"number": 48, "movement": "360 jump turn side kick. Step down into a back stance, double knife hand guarding block."},
+                  {"number": 49, "movement": "Shift your balance to the left foot and pivot 45 to the left. Step forward while rotating 180 to the left to a back stance square block (right hand closed, left hand open)."},
+                  {"number": 50, "movement": "Slide front kick, step forward fighting stance."},
+                  {"number": 51, "movement": "Fully extended round kick (high). Then pivot 45 to the left, 15° round kick (low), 45° round kick (middle). Then step forward while turning around to a back stance double knife hand guarding block (upset)."},
+                  {"number": 52, "movement": "Drop down to your back knee, and put both fists on the ground (one on either side of your body)"},
+                  {"number": 53, "movement": "Lunging rear leg front kick, step down into a back stance and execute a palm-out middle block."},
+                  {"number": 54, "movement": "Bring your left foot up behind the right foot to a crane stance, execute a right straight fist."},
+                  {"number": 55, "movement": "Drop back into a back stance, 360° double knife hand guarding block (low)."},
+                  {"number": 56, "movement": "Turn your attention 90 degrees to the left. Execute a right leg side kick."},
+                  {"number": 57, "movement": "Turn your attention 90 degrees to the left again, jumping front, in the air turn another 45° to the left, round kick. Step forward to a back stance and execute a palm heel strike to the face."},
+                  {"number": 58, "movement": "Turn around to a back stance reverse palm lifting block."},
+                  {"number": 59, "movement": "Horizontal spearhand to the ribs, kihap."},
+                  {"number": 60, "movement": "Holding the rib, step-up side kick, drop the rib, then hook. (low-high), step forward fighting stance."},
+                  {"number": 61, "movement": "Shift the balance to the left foot and pivot 135 to the left. Step backward to a front stance, but maintain your attention in the original direction and execute a down block. Simultaneously execute a back fist 180 from your down block."},
+                  {"number": 62, "movement": "Turn your attention 180 to the left and execute a diamond block."},
+                  {"number": 63, "movement": "Shift the balance to the left foot and pivot 90 to the left. Pull the right foot to the left foot and execute closed ready stance C. (Slow and with breath)"},
+                  {"number": 64, "movement": "Shift your attention 90 to the right. Execute a right leg slow motion side kick, step forward to a back stance. Quickly shift the balance to the right foot and turn your attention 180 to the left. Simultaneously pull your left foot back to a walking stance, palm out middle block."},
+                  {"number": 65, "movement": "Reverse palm block."},
+                  {"number": 66, "movement": "Bend your right knee slightly and turning to the left, execute a protected vertical reverse hammerfist to the groin."},
+                  {"number": 67, "movement": "Bring your weight forward again, moving the left foot to a cat stance and execute a protected back fist to the bridge of the nose."},
+                  {"number": 68, "movement": "Step forward to a horse stance, shifting your attention 90 to the left and execute a double scissor block."},
+                  {"number": 69, "movement": "Twin middle block."},
+                  {"number": 70, "movement": "Shift your attention 90 to the right and execute a sliding inside crescent kick, step forward fighting stance."},
+                  {"number": 71, "movement": "Jump outside crescent, step forward fighting stance."},
+                  {"number": 72, "movement": "Spin horizontal reinforced elbow strike (ribs) (spin to a horse stance.)"},
+                  {"number": 73, "movement": "Pivot 180 to the left and put your right knee on the ground, execute a reverse punch."},
+                  {"number": 74, "movement": "Side kick, step forward fighting stance."},
+                  {"number": 75, "movement": "Slow- motion front kick, step forward fighting stance."},
+                  {"number": 76, "movement": "Slide side kick, step forward fighting stance, back fist to the temple."},
+                  {"number": 77, "movement": "Reverse punch."},
+                  {"number": 78, "movement": "Three circular punches."},
+                  {"number": 79, "movement": "Shift the balance to the right foot, pivot 180 to the left to a back stance, square block."},
+                  {"number": 80, "movement": "Turning your attention 180 to the right, shift the balance to the left foot and pivot 90 to the right. Step backwards to a front stance, reverse knife hand strike (O-I)."},
+                  {"number": 81, "movement": "Turn your attention 90 to the left, execute a reverse knife hand down block."},
+                  {"number": 82, "movement": "Turn your attention 180 to the left and execute a left target crescent kick (I-O). Step forward fighting stance."},
+                  {"number": 83, "movement": "Reach out and grab. Execute a hopping target horizontal knee strike. Step forward while pivoting 180 to the left to a back stance, twin vertical elbow strikes to the rear."},
+                  {"number": 84, "movement": "Front leg front kick, step down and step forward to a back stance, double knife hand guarding block. (low, reverse)."},
+                  {"number": 85, "movement": "Leg trap"},
+                  {"number": 86, "movement": "Front leg double side kick (low, high), step down and step forward to a back stance, low knife hand X- block."},
+                  {"number": 87, "movement": "Spin hook – round kick, step all the way back 360 to a front stance, twin punch. KIHAP."}
+                ],
                 "belt_levels": {
                   "adults": "Blue Belt",
                   "teens": "Red Belt",
@@ -275,7 +649,8 @@
                   "strikes": ["Twin uppercuts", "Protected back fists", "Elbow strikes", "Hammer fists", "Punches (twin and circular)"]
                 },
                 "foot_techniques": ["Front kick", "Side kick", "Round kick", "Crescent kick", "Hook kick", "Jump kicks"],
-                "special_movements": ["360-degree turns", "Hopping", "Sliding steps", "Multiple directional changes"]
+                "special_movements": ["360-degree turns", "Hopping", "Sliding steps", "Multiple directional changes"],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/spirit/"
               }
             ],
             "one_steps": [
@@ -323,10 +698,69 @@
             "level": "High Blue Belt",
             "forms": [
               {
-                "name": "Walk in the Park",
+                "name": "A Walk in the Park",
                 "video_available": true,
-                "total_movements": "55+",
-                "starting_position": "Ready stance",
+                "total_steps": 55,
+                "starting_position": "Not explicitly stated (assumed from ready stance)",
+                "ending_position": "Right foot back to ready stance",
+                "kihaps": [9, 23, 34, 48, 51],
+                "steps": [
+                  {"number": 1, "movement": "Shift the balance to the right foot and pivot 90 to the left to a cat stance, reverse palm block (O-I) 1b. Uppercut."},
+                  {"number": 2, "movement": "Double side kick (low, high), step forward to a fighting stance."},
+                  {"number": 3, "movement": "Jump rear leg front kick, step forward while rotating 180 to the right to a front stance, palm pressing block."},
+                  {"number": 4, "movement": "Jump side kick, step forward to a fighting stance."},
+                  {"number": 5, "movement": "Spin hook kick, but spin only 270 to the right stepping backwards to a front stance tension horizontal spear hand."},
+                  {"number": 6, "movement": "Snapping crescent kick (O-I) stepping forward to a fighting stance."},
+                  {"number": 7, "movement": "Slide twist kick stepping forward to a fighting stance."},
+                  {"number": 8, "movement": "Shift the balance to the right foot and pivot 135 to the right and assume a horse stance, left back fist to the rear with a right down block to the right. Attention should be towards the back fist. 8b. Right turning punch. 8c. Left turning punch. 8d. Right tension grabbing block to the right."},
+                  {"number": 9, "movement": "Grab right wrist with left hand and pull back to a left chamber. Simultaneously execute a sliding side kick and kihap. Step forward to a fighting stance."},
+                  {"number": 10, "movement": "Shift the balance to the right foot. Pivoting 225 to the left, bring the left foot to the right foot and execute a right (O-I) target down block (palm out)."},
+                  {"number": 11, "movement": "Jump in the air and turn 180 to the left. Land in a horse stance, right tension middle punch. 11b. Left tension middle punch."},
+                  {"number": 12, "movement": "Shift your attention 90 to the left and pull the right foot to the left foot executing a right target punch."},
+                  {"number": 13, "movement": "Step forward to an even stance and execute a stick block."},
+                  {"number": 14, "movement": "Pull the left foot back to shoulder width, then pivot on the left foot 90 to the left stepping backwards with the right foot to a walking stance, reverse punch."},
+                  {"number": 15, "movement": "Kneel down on right knee and punch. 15b. Reverse punch."},
+                  {"number": 16, "movement": "Roll over right shoulder, standing up in an X-stance with the right foot in front of the left and execute a tension rising palm rising block."},
+                  {"number": 17, "movement": "Grab attacker's wrist with your left hand and execute a left leg snapping crescent kick. Shift your attention 90 to the left and step forward to a fighting stance."},
+                  {"number": 18, "movement": "Roll over right shoulder and stand up with your right foot forward. Shifting your balance to the right foot, step forward while rotating 180 to the right and assume a back stance knife hand low X – block."},
+                  {"number": 19, "movement": "Shift the balance to the right foot. Pull the left foot up and pivot 135 to the right, stepping backwards to a back stance, double knife hand guarding block."},
+                  {"number": 20, "movement": "Maintaining your attention in the original direction, shift the balance to the right foot and pivot 45 to the left. Step forward to a front stance, reverse middle block (I-O). 20b. Reverse knife hand down block."},
+                  {"number": 21, "movement": "Continue your attention in the original direction and step forward to a front stance, reverse back fist."},
+                  {"number": 22, "movement": "Turn side kick (towards the right with the left foot). 22b. Shift your attention 90 to the right and execute a left ball of the foot round kick. Pivot your body back 90 to the left and step backwards to a back stance, knife hand square block."},
+                  {"number": 23, "movement": "Three step jump 45 round – side kick, kihap. Land while turning 180 to the left to a back stance, double knife hand guarding block."},
+                  {"number": 24, "movement": "Slide round kick and step forward to a front stance, tension grabbing block."},
+                  {"number": 25, "movement": "Pull attacker's arm behind you while rotating 360 to the right. Step forward to a front stance, knife hand strike. 25b. Reverse punch."},
+                  {"number": 26, "movement": "Turn your attention 45 to the left. Double front kick, then step backwards to a front stance and execute a reinforced middle block."},
+                  {"number": 27, "movement": "Double jumping crescent kick, land in a fighting stance."},
+                  {"number": 28, "movement": "Slide side kick, then turn your attention 180 to the left and step backwards to a fighting stance."},
+                  {"number": 29, "movement": "Roll forward over your right shoulder to a kneeling position (left knee down) and execute a reverse punch."},
+                  {"number": 30, "movement": "Stand up while executing a rear leg front kick. Turn your attention 45 to the right and step forward while rotating 180 to the right to a cat stance, reverse double knife hand guarding block."},
+                  {"number": 31, "movement": "Step forward to a cat stance, double knife hand guarding block."},
+                  {"number": 32, "movement": "Step forward to a cat stance, guarding block."},
+                  {"number": 33, "movement": "Jump rear leg side kick. Land in a fighting stance and immediately shift the balance to the left foot and pivot 180 to the left to a walking stance, reverse target punch."},
+                  {"number": 34, "movement": "Step forward to a front stance, reverse rising elbow strike (targeted). 34b. Downwards knife hand strike, kihap."},
+                  {"number": 35, "movement": "Shift the balance to the right foot, and pivot 90 to the left to a back stance, high X- block. 35b. Shift the balance to the right foot and shorten your stance to walking. Simultaneously grab the attacker's arm and pull back into a reverse punch. 35c. Immediately step forward to a front stance, single knife hand guarding block."},
+                  {"number": 36, "movement": "Shift the balance to the right foot and pivot 45 to the right to closed ready stance (B)."},
+                  {"number": 37, "movement": "Shift your attention 180 to the right, and execute a right jump spin crescent kick pivoting all the way around 270 and landing in a fighting stance."},
+                  {"number": 38, "movement": "Turn hook kick stepping forward to a cat stance, low knife hand X- block. 38b. Twin horizontal elbow strikes to the rear. 38c. Horizontal spearhand to the throat. 38d. Protected vertical hammerfist to the groin. 38e. Twin middle blocks. 38f. Target vertical hammerfist, kihap."},
+                  {"number": 39, "movement": "Step forward while rotating 180 to the right to a back stance, left backfist to the bridge of the nose and right down block simultaneously."},
+                  {"number": 40, "movement": "Hopping forward with the left foot to an X- stance, protected back fist to the bridge of the nose."},
+                  {"number": 41, "movement": "Turning round kick (with the right foot) and step forward to a back stance, double knife hand guarding block."},
+                  {"number": 42, "movement": "Jump snapping crescent kick (O-I), land in a fighting stance."},
+                  {"number": 43, "movement": "Turn side kick, step forward in a back stance, double knife hand guarding block."},
+                  {"number": 44, "movement": "Shift the balance to the right foot and pivot 90 to the right and step backwards to a back stance, palm heel strike to the face and knife hand reverse rising block."},
+                  {"number": 45, "movement": "Lunging forward with the left foot, execute a jump spin back fist landing in a cat stance."},
+                  {"number": 46, "movement": "Pull the left foot up behind the right and pivot 135 to the left to a crane stance, guarding block."},
+                  {"number": 47, "movement": "Step backwards to a horse stance, side punch. 47b. Shift your attention 90 to the left and execute a twin punch. 47c. Shift your attention 90 to the left and execute a side punch."},
+                  {"number": 48, "movement": "Pull the left leg back to a knee block. Execute a descending palm block and reverse palm block (O-I) simultaneously. 48b. Step down into a horse stance, down block. 48c. Tension twin grabbing block. 48d. Right knee strike, kihap. Step back into a horse stance and execute a knife hand down block. 48e. Shift your attention 180 to the right shifting into an even stance and execute a stick block."},
+                  {"number": 49, "movement": "Double side kick, step forward to a fighting stance."},
+                  {"number": 50, "movement": "Jump rear leg front kick, then pivot 45 to the left to a front stance, reverse scissor block."},
+                  {"number": 51, "movement": "Step forward to a front stance, reverse high knife hand middle block. 51b. Tension palm pushing block. 51c. Reverse punch, Kihap."},
+                  {"number": 52, "movement": "Ax kick (O-I), step forward while rotating 180 to the left. Step backwards to a back stance, back fist to the temple."},
+                  {"number": 53, "movement": "Turn around, back stance knife hand square block."},
+                  {"number": 54, "movement": "Turn around, back stance reverse low double knife hand guarding block."},
+                  {"number": 55, "movement": "Turn around, back stance double knife hand guarding block."}
+                ],
                 "special_features": [
                   "Jumping 180 degrees in air",
                   "Rolling over shoulder movements",
@@ -340,7 +774,38 @@
                   "Spin hook kick",
                   "Snapping crescent kick",
                   "Slide twist kick"
-                ]
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/high-blue-belt-form/"
+              }
+            ],
+            "one_steps": [
+              {
+                "name": "One-Step 4",
+                "attacker_technique": "Running hook lunge punch",
+                "defender_sequence": [
+                  "Left high rising block simultaneously grabbing the back of the attacker's head with the right hand",
+                  "Turn your body 90 to the left, stepping backwards with the left foot and redirect the attacker to the ground",
+                  "Maintaining control over the right arm, circle it around behind the attacker's head to a hog – tie"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/high-blue-belt-one-steps/"
+              },
+              {
+                "name": "One-Step 5",
+                "attacker_technique": "Sliding back fist",
+                "defender_sequence": [
+                  "Block then grab attacker's arm and drop to left side executing a right side kick to the ribs or a right round kick to the groin (depending on the size and position of the attacker)",
+                  "Then scissor take down and ax kick to the tail bone"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/high-blue-belt-one-steps/"
+              },
+              {
+                "name": "One-Step 6",
+                "attacker_technique": "Lunge jab",
+                "defender_sequence": [
+                  "Left high middle block, and right tiger mouth to the throat",
+                  "Then, maintaining control over your attacker's arm, turn 180 to the left and execute a shoulder or hip throw"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/high-blue-belt-one-steps/"
               }
             ]
           }
@@ -349,7 +814,236 @@
       {
         "rank": "Red Belt",
         "color": "red",
-        "description": "Advanced rank - details not found on public pages"
+        "levels": [
+          {
+            "level": "Red Belt",
+            "forms": [
+              {
+                "name": "Quetzalcoatl",
+                "video_available": true,
+                "total_steps": 65,
+                "starting_position": "closed ready stance B",
+                "ending_position": "ready stance (left foot back)",
+                "kihaps": [37, 53],
+                "steps": [
+                  {"number": 1, "movement": "Shift the balance to the left foot and step forward to assume a chi sau stance while executing a traditional bon sau/fuk sau position"},
+                  {"number": 2, "movement": "Slightly shift your weight back to the left foot while rolling up into a taun sau"},
+                  {"number": 3, "movement": "Maintain your focus and redirect underneath while moving the left foot into a cat stance 90 degrees to the left, executing a reinforced back fist to the bridge of the nose. (lap sau)"},
+                  {"number": 4, "movement": "Turn your attention 90 degrees to the left and execute a knife hand square block"},
+                  {"number": 5, "movement": "Leaving the right hand where it is, execute a scoop rising palm block with the left hand"},
+                  {"number": 6, "movement": "Immediately followed by front leg front snap kick to the chin"},
+                  {"number": 7, "movement": "Step down into a front stance 45 degrees off center (feet on line 90 to the left) while turning your attention 90 to the right and execute a scooping ridge hand middle block"},
+                  {"number": 8, "movement": "Rechamber the right arm, reverse spear hand to the throat"},
+                  {"number": 9, "movement": "Shifting your stance 135 degrees to the right, execute a reverse upset ridge hand strike to the temple"},
+                  {"number": 10, "movement": "Reverse knife hand down block"},
+                  {"number": 11, "movement": "Keeping your attention in the same direction, bring the left foot to the right foot and execute a right double finger strike to the eyes (protected)"},
+                  {"number": 12, "movement": "Step forward with the left foot into an X stance, reverse protected upset ridge hand strike to the temple"},
+                  {"number": 13, "movement": "Transfer all of your weight to the left foot. Maintaining your focus, step forward and pivot 225 degrees to the left to a front stance (feet on line). Simultaneously execute a right knife hand down block over the right leg and left upset ridge hand strike to the temple (180 from the down block)"},
+                  {"number": 14, "movement": "Transfer your weight to the right foot execute a left wave kick. Step forward to an X stance executing a right descending knife hand strike to the neck"},
+                  {"number": 15, "movement": "Redirect attacker from the head and roll them into a target hammer fist while stepping into a horse stance"},
+                  {"number": 16, "movement": "Pivot 45 to the left, dropping to the right knee. Execute a reverse tiger mouth, protected"},
+                  {"number": 17, "movement": "Hold on to throat and pull back into a back fist"},
+                  {"number": 18, "movement": "Turn you attention 180 degrees to your left, place both palms on the ground and execute a left side kick"},
+                  {"number": 19, "movement": "As you rechamber, execute a hard roll over the right shoulder"},
+                  {"number": 20, "movement": "As you stand up, execute a left side kick and step forward while pivoting 180 degrees to the right into a back stance. Turn your attention 90 degrees to the left and execute a high palm strike"},
+                  {"number": 21, "movement": "Reach out and grab you opponent's left shoulder with your left hand and execute a right tan sau to your attacker's head while pulling their shoulder into your center line. Your attacker is now facing 90 degres to the left"},
+                  {"number": 22, "movement": "Roll both arms from the shoulder 270 degrees clockwise. Let go of attacker's shoulder and allow the right hand to slip off from behind the attacker's neck. continue that motion all the way around turning into a horse stance, pop the ear drums"},
+                  {"number": 23, "movement": "Shift the balance to the right foot and turn your attention 90 to the right. Crating dynamic tension, bring both hands to your center line in an inverted prayer position. Slide the left foot behind the right knee (crane stance), right lifting wrist strike and left palm block (O-I)"},
+                  {"number": 24, "movement": "Step forward to a cat stance, twin ridge hand middle blocks"},
+                  {"number": 25, "movement": "Right vertical punch and left palm block (O-I)"},
+                  {"number": 26, "movement": "Roll the left hand up to tan sau"},
+                  {"number": 27, "movement": "Roll right hand down to an inverted palm block (I-O)"},
+                  {"number": 28, "movement": "Turn your attention 180 to the right. Shift the left foot and pivot your body 90 degrees to the left to an X stance. Bring both hands together and create dynamic tension, this time in a prayer position"},
+                  {"number": 29, "movement": "Shift the left foot again while moving the right foot behind the knee to a crane stance; execute a left lifting wrist strike and right palm block (O-I)"},
+                  {"number": 30, "movement": "Step forward to a cat stance and execute twin ridge hand middle blocks"},
+                  {"number": 31, "movement": "Left straight punch, right palm block (O-I)"},
+                  {"number": 32, "movement": "Roll your right hand up to tan sau"},
+                  {"number": 33, "movement": "Roll left hand down to an inverted palm block (I-O)"},
+                  {"number": 34, "movement": "Leading with a 180 clockwise roll of the arms, execute a crescent kick"},
+                  {"number": 35, "movement": "Quickly execute a turn side kick. After rechambering, turn your attention 180 to the left and assume a crane stance, high knife hand X-block"},
+                  {"number": 36, "movement": "Step backwards with the right foot to an extra deep back stance. Simultaneously roll your hands over into a low knife hand X-block, trapping attacker's arm"},
+                  {"number": 37, "movement": "Immediately scoop up your right hand to your hip while stepping forward and executing a left clearing block; assume an extra deep front stance with a single vertical punch. KIHAP"},
+                  {"number": 38, "movement": "Turn your attention 225 to the left. Pull the left foot back to a cat stance. Simultaneously execute an inverted palm block (I-O, low) with a reverse palm block (O-I, high)"},
+                  {"number": 39, "movement": "Bring left hand around to a protected upset ridge hand"},
+                  {"number": 40, "movement": "Drop both hands slightly and execute twin crane blocks"},
+                  {"number": 41, "movement": "Trapping with both hands, lift right elbow up to parallel with the left forearm"},
+                  {"number": 42, "movement": "Push left foot forward to an X-stance; then execute a reverse horizontal wrist strike to the temple but continue to trap with the left crane block"},
+                  {"number": 43, "movement": "Maintaining the trap with the left crane block, execute a right twist kick to the knee, step forward fighting stance"},
+                  {"number": 44, "movement": "Immediately shift the balance to the right foot. Bring the left foot up to a wave stop and simultaneously execute a twin palm wedging block"},
+                  {"number": 45, "movement": "Push right hand down along with attacker's arm to trap from above with your fingers (simulate three points on the button while palming the back of the hand). Turn around180 degrees as you do this, stepping with the left foot to a reverse front stance"},
+                  {"number": 46, "movement": "As your foot hits the ground, maintain the trap with the right hand and slide your left elbow into your attacker's solar plexus"},
+                  {"number": 47, "movement": "Shift the balance to the right foot and slide the left back to a cat stance. Execute a left knife hand rising X block"},
+                  {"number": 48, "movement": "Keeping the right hand in contact with the attacker's arm, drop the left hand arm down to circle around 360 degrees clockwise to trap the attacker's arm"},
+                  {"number": 49, "movement": "Pivoting 360 degrees to the right while shifting your weight to the left foot, assume a reverse X stance. Maintain the trap on the attacker's arm and execute a right horizontal wrist strike"},
+                  {"number": 50, "movement": "Pivot back 360 degrees to the left and assume a fighting stance. Execute a reverse palm heel strike to the upper lip. Do not rechamber your hips"},
+                  {"number": 51, "movement": "Turn your attention 90 degrees to the right. Reach the right hand out to make contact with the inside of an attacker's elbow; step forward with the right foot to an X stance and circle through the wrist clockwise and slip down to the attacker's wrist"},
+                  {"number": 52, "movement": "Keep hold of attacker's arm and execute an outside crescent kick; follow the crescent kick with the left hand to grab back of attacker's head and let go of their arm. Step down 45 degrees to the right into a parallel stance"},
+                  {"number": 53, "movement": "Right targeted dragon snap to the head; touch your foot down briefly and pop up with both legs tucked, spinning counterclockwise and landing in a horse stance. Execute a right palm strike straight down (hit the ground) KIHAP!"},
+                  {"number": 54, "movement": "Reach out with the left hand 90 degrees to the left; make contact with the outside of the elbow; slip down to the wrist as you make contact with the right hand on the outside of the elbow; simultaneously cross the right foot over the left to an X stance"},
+                  {"number": 55, "movement": "Swing the left arm around to capture attacker's head (keep hold of the arm with the right hand). Execute a left crescent kick over the top of attacker's arm; pivot 180 degrees and step down to a parallel stance; also switch attacker's arm to be trapped with the left hand"},
+                  {"number": 56, "movement": "Lift the right knee up high and fall backwards, break falling with the right hand (breaking attacker's arm)"},
+                  {"number": 57, "movement": "Leading with the left foot, stand up and execute a tornado kick. Allow your body to rotate past your target (finish the technique) step forward to a walking fighting stance knife hand down block, reverse knife hand strike to the neck (O-I)"},
+                  {"number": 58, "movement": "Roll the left hand counterclockwise to trap behind the knee. Step backwards with the left foot to a back stance while bringing the right hand to a horizontal wrist strike to the throat"},
+                  {"number": 59, "movement": "Roll the right hand counterclockwise behind attacker's head; sweep both hands to your left knee while stepping with the left foot to an extra deep back stance"},
+                  {"number": 60, "movement": "Bring the left foot up to a fighting stance and execute a right 45 degree dropping upset ridge hand"},
+                  {"number": 61, "movement": "Get up on the toe of the left foot and execute a left dropping ridge hand"},
+                  {"number": 62, "movement": "Execute a left upset dropping ridge hand – keep your hand on the side of their head"},
+                  {"number": 63, "movement": "As you step forward with the left foot to a cat stance, place the palm of your right hand on the attacker's shoulder and push their left shoulder forward while turning the left hand over to tan sau. Turn the attacker around by circling both hands counterclockwise; the left will circle vertically, the right horizontally. Bring right hand back towards attacker's throat to a ridge hand choke, supporting attacker on your left elbow"},
+                  {"number": 64, "movement": "Arch back and push up with your right hand, then drop both hands 45 to the right"},
+                  {"number": 65, "movement": "Left foot back to ready stance"}
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/red-belt-form/"
+              }
+            ],
+            "one_steps": [
+              {
+                "name": "Red Belt One-Step 1",
+                "attacker_technique": "Lunge punch to the face",
+                "defender_sequence": [
+                  "Trap the punch",
+                  "Lead with right hand to twin trap",
+                  "Left horizontal knee strike to ribs",
+                  "Step down and apply pressure with right instep to attacker's right knee",
+                  "Take down with an axe kick"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/red-belt-one-steps/"
+              },
+              {
+                "name": "Red Belt One-Step 2",
+                "attacker_technique": "Unspecified attack",
+                "defender_sequence": [
+                  "Left palm block",
+                  "Step through right foot at 45-degree angle",
+                  "Thrust right hand near attacker's neck",
+                  "Push on attacker's right shoulder to spin them",
+                  "Apply choke hold",
+                  "Execute neck break"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/red-belt-one-steps/"
+              },
+              {
+                "name": "Red Belt One-Step 3",
+                "attacker_technique": "Unspecified attack",
+                "defender_sequence": [
+                  "Execute twin trap (pushing down)",
+                  "Circle back to twin eardrum pop",
+                  "Step back to pseudo back stance",
+                  "Step to X-stance",
+                  "Right elbow to face",
+                  "Spin 180 degrees to X-stance",
+                  "Left elbow to ribs",
+                  "Rotate 90 more degrees",
+                  "Right dropping ridge hand to neck",
+                  "Grab back of head",
+                  "Step back to deep back stance",
+                  "Scoop attacker to ground"
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/red-belt-one-steps/"
+              }
+            ]
+          },
+          {
+            "level": "High Red Belt",
+            "forms": [
+              {
+                "name": "Alignment",
+                "video_available": true,
+                "total_steps": 51,
+                "starting_position": "open ready stance C",
+                "ending_position": "ready stance (move back by placing left foot down into X stance first, then move right foot to finish)",
+                "kihaps": [22, 37, 48],
+                "steps": [
+                  {"number": 1, "movement": "Shift the balance to the left foot and pop forward to assume an X stance; turn your attention 90 degrees to the right, execute a twin knife hand guarding block"},
+                  {"number": 2, "movement": "Unwind 270 degrees counterclockwise; step forward to a fighting stance with a 45-degree dropping knife hand strike"},
+                  {"number": "2b", "movement": "Half way through a change sides execute a reverse 45-degree dropping ridge hand"},
+                  {"number": 3, "movement": "Step forward to a fighting stance with a 45-degree dropping knife hand strike"},
+                  {"number": "3b", "movement": "Half way through a change sides execute a reverse 45-degree dropping ridge hand"},
+                  {"number": 4, "movement": "Step forward and assume a back stance, backfist"},
+                  {"number": 5, "movement": "Shift the front foot back to a fighting stance; simultaneously execute a reverse dropping ridge hand with a pass over"},
+                  {"number": "5b", "movement": "Half way through a change sides execute a left letter J; roll up the inside with the left hand; come out over the top with a high 45 degree forward palm block"},
+                  {"number": 6, "movement": "Step forward and assume a back stance, backfist"},
+                  {"number": 7, "movement": "Step backward to a chi sau stance, palm lifting block"},
+                  {"number": 8, "movement": "Step backward to a chi sau stance, palm-lifting block"},
+                  {"number": 9, "movement": "Tuck the left leg behind the right knee to a crane stance; execute a right rising wrist strike with a reverse outside palm block simultaneously"},
+                  {"number": 10, "movement": "Dropping the left arm down and rotating the arm counterclockwise 360 degrees, step forward to a fighting stance"},
+                  {"number": "10b", "movement": "While continuing the shoulder rotation from step 10, grab attacker's head and pull into a right dragon snap. Pivot 180 degrees clockwise to assume an X stance"},
+                  {"number": 11, "movement": "Turn your attention 90º to the right; step back with the left foot and assume a back stance, twin knife hand guarding block"},
+                  {"number": 12, "movement": "Step forward to assume a front stance and execute a rising block"},
+                  {"number": "12b", "movement": "Reverse rising uppercut to the chin (with a re-chamber)"},
+                  {"number": "12c", "movement": "As you re-chamber, execute a half change sides with a beach ball. Allow the left hand to scoop from underneath and flatten to a horizontal beach ball"},
+                  {"number": "12d", "movement": "As you move forward, execute a left clearing block (palm out)"},
+                  {"number": 13, "movement": "Step forward to assume a back stance and execute an outside palm block"},
+                  {"number": 14, "movement": "Leaning far forward, bring the back leg up to a crane stance. Execute a backfist with a reverse palm block"},
+                  {"number": "14b", "movement": "Torque your body back and execute a wave stop with a horizontal wrist strike (maintain the position of the left hand)"},
+                  {"number": 15, "movement": "Step back with the left leg to a back stance, twin knife hand guarding block"},
+                  {"number": 16, "movement": "Shift your attention 180 degrees to the left. Pull the left leg back to assume a chi sau stance with three points"},
+                  {"number": "16b", "movement": "Slide the fingers of the right hand down to the attacker's wrist while reaching up with the left for their elbow. Catch the elbow with a half change sides"},
+                  {"number": 17, "movement": "Step forward with the right foot, crossing in front to assume an X stance. Execute a 360-degree palm strike to the groin"},
+                  {"number": 18, "movement": "Turn your attention 45 degrees to the right and execute a left spin snap crescent kick"},
+                  {"number": "18b", "movement": "Touch the foot down lightly while pivoting 360 degrees around for a turn side kick with the left leg. Step forward while pivoting 180 degrees to the right and assume a back stance while chambering for move (19.)"},
+                  {"number": 19, "movement": "Immediately pull the right foot back to a crane stance, knife hand diamond block"},
+                  {"number": "19b", "movement": "Circle the left arm around in a scooping motion to catch the back of the attacker's front kick (at the ankle). Pass this across and under the right side"},
+                  {"number": 20, "movement": "Circle the right arm around to catch inside the attacker's knee. As you step forward to assume a front stance, extend your left arm to place your hand on the attacker's left shoulder (slide your right hand from behind the knee down to the ankle on the right side)"},
+                  {"number": 21, "movement": "Stretch kick with pointed toes; simultaneously pull the left hand down to your side"},
+                  {"number": "21b", "movement": "While you turn your attention 180 degrees to the left, circle the left arm from the shoulder counterclockwise and catch the attacker by the head; assume a chi sau stance and execute a right straight punch to a falling attacker's upper lip"},
+                  {"number": 22, "movement": "Get up on the left toe and turn your hips 45º to the left; step with the left foot to a chi sau stance and reach down with the left hand; contact attacker's elbow. Pull their elbow up and pass off to the right hand. Circle left hand down to catch their shoulder; simultaneously pick up your left foot and step deeper and drop to the right knee. Execute a right straight punch to the upper lip. KIHAP"},
+                  {"number": 23, "movement": "Turn your attention 180 degrees to the right. Circling through the shoulder, reach the right hand up with 'drama' to grab (new) attacker's head. As you stand up, execute a front leg targeted snapping inside crescent"},
+                  {"number": "23b", "movement": "Bounce your foot off the floor and immediately follow with a front snap kick"},
+                  {"number": 24, "movement": "Step forward and assume a fighting stance while grabbing attacker's right arm with your left hand"},
+                  {"number": "24b", "movement": "Step forward to an X stance (cross in front) and execute a right 360º dropping vertical knife hand to the groin"},
+                  {"number": 25, "movement": "Re-chamber your right hand to the hip. Circling through the shoulder, reach around and grab the back of the attacker's head. Simultaneously, pull the attacker around (by their head and right arm) 180 degrees to the left and drop back into a chi sau stance"},
+                  {"number": "25b", "movement": "Vertical knee strike (targeted). Step backward to a chi sau stance. As you step, bring the left hand around to slap the back of the right, transferring the squished head of the attacker into the left hand"},
+                  {"number": "25c", "movement": "Execute a targeted dragon snap to the already decimated skull of your attacker. Allow your right leg to circle almost 360 degrees counterclockwise. Turn your attention 180 degrees to the left; step backward to assume a chi sau stance with a right low clearing block (palm up)"},
+                  {"number": 26, "movement": "Step forward to assume a chi sau stance and execute a reverse knife hand strike (O-I)"},
+                  {"number": "26b", "movement": "Shifting your weight forward, execute a reverse knife hand down block"},
+                  {"number": "26c", "movement": "Shift your weight back to center and execute a knife hand strike"},
+                  {"number": "26d", "movement": "Continue to shift your weight backward and execute a reverse sliding tan sau"},
+                  {"number": 27, "movement": "Step forward to assume a chi sau stance and execute a reverse knife hand strike (O-I)"},
+                  {"number": "27b", "movement": "Shifting your weight forward, execute a reverse knife hand down block"},
+                  {"number": "27c", "movement": "Shift your weight back to center and execute a knife hand strike"},
+                  {"number": "27d", "movement": "Continue to shift your weight backwards and execute a reverse sliding tan sau"},
+                  {"number": 28, "movement": "Maintain your attention forward, but turn your body 90 degrees to the right. Crossing the right foot behind, assume an X stance; circle the left hand counterclockwise around to capture the attacker's elbow and execute a 360 degree palm strike to the groin"},
+                  {"number": 29, "movement": "Unwind 270 degrees counterclockwise executing a spin snap crescent"},
+                  {"number": "29b", "movement": "Touch the foot down lightly and come all the way around for a turn side kick with the right leg. Step forward while pivoting 180 degrees to the left and assume a back stance, chambered for move (30.)"},
+                  {"number": 30, "movement": "Immediately pull the left foot back to a crane stance, knife hand diamond block"},
+                  {"number": 31, "movement": "Circle the right hand down to capture a front kick (at the ankle). Pass this across and under the left side"},
+                  {"number": 32, "movement": "As you step forward with the left foot to a fighting stance, circle the left arm around to catch inside the attacker's knee"},
+                  {"number": 33, "movement": "Circle the right foot clockwise behind attacker's standing leg to a chi sau stance. Place your right hand on their rear shoulder (maintain the position of your left hand) and pivot 135º to the left and assume a chi sau stance"},
+                  {"number": 34, "movement": "As you pivot 90 degrees to the left into a front stance, execute a right low clearing block (palm up); roll the left hand around to the back of the attacker's ankle with an inverted left palm lifting block"},
+                  {"number": 35, "movement": "315º spin axe kick to attacker's head (on the ground; croquet style)"},
+                  {"number": "35b", "movement": "Twist kick; step forward to a fighting stance"},
+                  {"number": 36, "movement": "Wave kick. Turn your attention 180 degrees to the left and step forward to a fighting stance"},
+                  {"number": 37, "movement": "360º jump spin snap crescent kick. Turn your attention 180 degrees to the left and step forward while kneeling to the right knee, palm block (O-I) and reverse straight punch to the groin. KIHAP"},
+                  {"number": 38, "movement": "Turn your attention 180 degrees to the right. Stand up in a fighting stance with a 45-degree dropping knife hand strike"},
+                  {"number": "38b", "movement": "Half way through a change sides execute a reverse 45-degree dropping ridge hand"},
+                  {"number": 39, "movement": "Step forward to a fighting stance with a 45-degree dropping knife hand strike"},
+                  {"number": "39b", "movement": "Half way through a change sides execute a reverse 45-degree dropping ridge hand"},
+                  {"number": 40, "movement": "Step forward and assume a back stance, backfist"},
+                  {"number": 41, "movement": "Shift the front foot back to a fighting stance; simultaneously execute a reverse dropping ridge hand with a pass over"},
+                  {"number": "41b", "movement": "Half way through a change sides execute a right letter J; roll up the inside with the right hand; come out over the top with a high 45 degree forward palm block"},
+                  {"number": 42, "movement": "Step forward and assume a back stance, backfist"},
+                  {"number": 43, "movement": "Step backward to a chi sau stance, palm lifting block"},
+                  {"number": 44, "movement": "Step backward to a chi sau stance, palm-lifting block"},
+                  {"number": 45, "movement": "Tuck the right leg behind the left knee to a crane stance; execute a left rising wrist strike with a reverse palm block (O-I) simultaneously"},
+                  {"number": 46, "movement": "Dropping the right arm down and rotating the arm from the shoulder counterclockwise 360 degrees, step forward to a fighting stance"},
+                  {"number": "46b", "movement": "While continuing the rotation from step 46, grab attacker's head and pull into a left dragon snap. Allow the left leg to completely circle back around 360º clockwise to assume an X stance"},
+                  {"number": 47, "movement": "Unwind clockwise to a walking stance, twin knife hand guarding block"},
+                  {"number": 48, "movement": "Execute a 360º jump spin crescent kick. Pivot another 90 degrees clockwise; turn around and step forward while dropping to the left knee. Execute an outside palm block and a reverse straight punch to the groin. KIHAP"},
+                  {"number": 49, "movement": "Execute a right (outside) knife hand strike to the knee. Immediately follow this with a left sweeping block, pushing the attacker out of the way"},
+                  {"number": "49b", "movement": "Roll over the right shoulder (soft roll). As you stand up, execute a left side kick 180 degrees to the left"},
+                  {"number": "49c", "movement": "Turn your attention 180 degrees to the right and execute a left front snap kick to the chin"},
+                  {"number": 50, "movement": "Step backward to a back stance, low ridge hand sweeping block"},
+                  {"number": "50b", "movement": "Figure eight the right hand around for a low dropping upset ridge hand block"},
+                  {"number": "50c", "movement": "Circle the right hand up to catch the attacker's elbow"},
+                  {"number": 51, "movement": "As you begin to move your left foot up to execute a wave stop, pass off the elbow to the left hand"},
+                  {"number": "51b", "movement": "Bring the right hand up the inside and execute a protected horizontal wrist strike to the temple"}
+                ],
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/high-red-belt-form/"
+              }
+            ],
+            "one_steps": []
+          }
+        ]
       },
       {
         "rank": "Black Belt", 
