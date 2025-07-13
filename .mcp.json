@@ -1,12 +1,8 @@
 {
   "mcpServers": {
-    "postgres": {
+    "browser": {
       "command": "npx",
-      "args": [
-        "-y", 
-        "@modelcontextprotocol/server-postgres",
-        "postgresql://journeyloop_user:journeyloop_secure_pass_2025@localhost:5432/journeyloop_assistant"
-      ]
+      "args": ["@browsermcp/mcp@latest"]
     }
   }
 }

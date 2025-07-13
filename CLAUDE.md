@@ -113,3 +113,9 @@ poetry add --group dev package_name
 - Use virtual environments (Poetry handles this automatically)
 - Keep dependencies up to date with `poetry update`
 - Use `.env` files for local configuration (never commit these)
+
+## Project Specifics
+
+### Quantum Forms Project Structure
+- This project is implemented as a single page in index.html
+- All data for the page is stored in a single JSON file under @quantum_curriculum_complete.json
