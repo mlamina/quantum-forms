@@ -252,7 +252,7 @@
                     <template x-for="step in getCurrentForm()?.steps" :key="step.number">
                         <div class="flex gap-4 px-4 py-4 border-b border-slate-200">
                             <div class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center text-sm font-bold" x-text="step.number"></div>
-                            <div class="flex-1 text-base text-slate-800" x-text="step.movement"></div>
+                            <div class="flex-1 text-base text-slate-800" x-text="step.movement + (getCurrentForm()?.kihaps?.includes(step.number) ? ' 💥' : '')"></div>
                         </div>
                     </template>
                 </div>
@@ -264,17 +264,6 @@
                         <div class="flex-1">
                             <div class="text-red-700 font-semibold text-sm uppercase tracking-wide mb-1">End Position</div>
                             <div class="text-slate-800 text-base" x-text="getCurrentForm()?.ending_position"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Kihaps -->
-                <div x-show="getCurrentForm()?.kihaps?.length" class="px-4 py-4">
-                    <div class="flex gap-4">
-                        <div class="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center text-sm font-bold">K</div>
-                        <div class="flex-1">
-                            <div class="text-blue-700 font-semibold text-sm uppercase tracking-wide mb-1">Kihaps</div>
-                            <div class="text-slate-800 text-base" x-text="'Steps: ' + getCurrentForm()?.kihaps?.join(', ')"></div>
                         </div>
                     </div>
                 </div>
@@ -324,20 +313,24 @@
                                 class="bg-white"
                             >
                                 <!-- Attacker -->
-                                <div x-show="oneStep.attacker_technique || oneStep.attacker" class="border-t border-slate-200 px-4 md:px-6 py-4 md:py-5 relative">
-                                    <div class="absolute top-3 md:top-4 right-4 md:right-6 text-xl opacity-60">👊</div>
-                                    <div class="pr-12">
-                                        <div class="text-red-700 font-semibold text-sm uppercase tracking-wide mb-2">Attacker</div>
+                                <div x-show="oneStep.attacker_technique || oneStep.attacker" class="border-t border-slate-200 px-4 md:px-6 py-4 md:py-5 bg-red-50">
+                                    <div>
+                                        <div class="text-red-700 font-semibold text-sm uppercase tracking-wide mb-2 flex items-center gap-2">
+                                            <span class="text-xl opacity-60">👊</span>
+                                            <span>Attacker</span>
+                                        </div>
                                         <div class="text-slate-800 text-base leading-relaxed" x-text="oneStep.attacker_technique || oneStep.attacker"></div>
                                     </div>
                                 </div>
                                 
                                 <!-- Defender -->
-                                <div x-show="oneStep.defender_sequence?.length" class="border-t border-slate-200 relative">
-                                    <div class="absolute top-3 md:top-4 right-4 md:right-6 text-xl opacity-60">🛡️</div>
+                                <div x-show="oneStep.defender_sequence?.length" class="border-t border-slate-200 bg-blue-50">
                                     <!-- Defender Header -->
-                                    <div class="px-4 md:px-6 py-4 md:py-5 pb-2 pr-12">
-                                        <div class="text-blue-700 font-semibold text-sm uppercase tracking-wide">Defender</div>
+                                    <div class="px-4 md:px-6 py-4 md:py-5 pb-2">
+                                        <div class="text-blue-700 font-semibold text-sm uppercase tracking-wide flex items-center gap-2">
+                                            <span class="text-xl opacity-60">🛡️</span>
+                                            <span>Defender</span>
+                                        </div>
                                     </div>
                                     <!-- Defender Steps -->
                                     <div class="pb-4 md:pb-5 space-y-4">
