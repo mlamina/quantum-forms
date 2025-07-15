@@ -17,6 +17,7 @@
                 "total_steps": 20,
                 "starting_position": "Ready stance",
                 "ending_position": "Left foot back to ready stance",
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/basic-form/",
                 "steps": [
                   {"number": 1, "movement": "Shift the balance to the right foot, pivot ninety (90) degrees to the left, assume a front stance and down block."},
                   {"number": 2, "movement": "Step forward to a front stance, single middle punch."},
@@ -82,6 +83,7 @@
                 "kihaps": [9, 22, 30],
                 "starting_position": "Ready stance",
                 "ending_position": "Turn 180° over right shoulder, move right foot back to ready stance",
+                "src": "https://quantumsf.org/adult-martial-arts-curriculum/gravity/",
                 "steps": [
                   {"number": 1, "movement": "Right foot balance, pivot 90° left, front stance, down block"},
                   {"number": 2, "movement": "Step forward, front stance, middle (inside) block"},
